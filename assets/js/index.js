@@ -3,6 +3,34 @@ $(document).ready(function() {
     EzsChangePrice.init()
     EzsFC.init()
     EzsListCustomer.init()
+    EzsImageMarker.init()
+
+    $('.screen-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        center: true,
+        dots: true,
+        nav: false,
+        rtl: true,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 3
+            },
+            991: {
+                items: 4
+            },
+            1200: {
+                items: 4
+            },
+            1920: {
+                items: 4
+            }
+        }
+    });
 
     $('.popup-youtube').magnificPopup({
         //disableOn: 700,
@@ -542,5 +570,96 @@ var EzsFC = {
             $(`[data-nav]`).first().addClass("active");
             $(`[data-tab]`).first().addClass("active");
         }
+    }
+}
+
+var EzsImageMarker = {
+    init: () => {
+        EzsImageMarker.MarkerOne()
+    },
+    MarkerOne: () => {
+        const data = [{
+                "title": "Tìm kiếm",
+                "content": "Bạn có thể tìm kiếm các thông tin về sản phẩm ( Mỹ phẩm ) & Dịch vụ",
+                "className": "green",
+                "pos": { "x": 32, "y": 76 },
+                "col": 1
+            },
+            {
+                "title": "Slider Banner",
+                "content": "Banner các chương trình ưu đãi, dịch vụ mới - HOT, các sự kiện quan trọng trong SPA",
+                "className": "green",
+                "pos": { "x": 32, "y": 155 },
+                "col": 1
+            },
+            {
+                "title": "Quick Link",
+                "content": "Giúp người dùng ( Khách hàng truy cập nhanh đến các nội dung chính ), có thể thay đổi theo nhu cầu của SPA",
+                "className": "green",
+                "pos": { "x": 32, "y": 327 },
+                "col": 1
+            },
+            {
+                "title": "Danh sách các dịch vụ HOT",
+                "content": "Có thể chủ động thay đổi theo thời gian, xu hướng.",
+                "className": "green",
+                "pos": { "x": 32, "y": 448 },
+                "col": 1
+            },
+            {
+                "title": "Danh sách các dịch vụ HOT",
+                "content": "Có thể chủ động thay đổi theo thời gian, xu hướng.",
+                "className": "yello",
+                "pos": { "x": 533, "y": 73 },
+                "col": 2
+            },
+            {
+                "title": "Danh sách các dịch vụ HOT",
+                "content": "Có thể chủ động thay đổi theo thời gian, xu hướng.",
+                "className": "yello",
+                "pos": { "x": 533, "y": 170 },
+                "col": 2
+            },
+            {
+                "title": "Danh sách các dịch vụ HOT",
+                "content": "Có thể chủ động thay đổi theo thời gian, xu hướng.",
+                "className": "yello",
+                "pos": { "x": 533, "y": 320 },
+                "col": 2
+            },
+            {
+                "title": "Danh sách các dịch vụ HOT",
+                "content": "Có thể chủ động thay đổi theo thời gian, xu hướng.",
+                "className": "yello",
+                "pos": { "x": 533, "y": 480 },
+                "col": 2
+            }
+        ];
+        var imageMarker = $("#element").imageMarker({
+            src: '/eztheme/wp-content/themes/ezsthemes/assets/img/app/home-app.png',
+            drag_disabled: true
+        });
+
+        data.forEach(function(m) {
+            $(imageMarker).trigger('add_marker', m);
+        })
+
+        $('#add_neg_marker').click(function() {
+            $(imageMarker).trigger('add_marker', {
+                className: 'yello'
+            });
+        });
+        $('#add_pos_marker').click(function() {
+            $(imageMarker).trigger('add_marker', {
+                title: 'adadad',
+                content: 'Content for mock marker should be a bit longer, longer, longer... ok that`s it.',
+                className: 'green'
+            });
+        });
+        $('#save').click(function() {
+            $(imageMarker).trigger('get_markers', function(data) {
+                console.log(JSON.stringify(data))
+            });
+        });
     }
 }

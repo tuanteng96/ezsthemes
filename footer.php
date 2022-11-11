@@ -94,6 +94,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/theia-sticky/theia-sticky-sidebar.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/lib/Image-Marker/jquery.image-marker.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js?10"></script>
 <!-- <script src="<?php echo get_template_directory_uri() ?>/assets/js/blog-detail.js"></script> -->
 <script>

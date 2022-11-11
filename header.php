@@ -32,6 +32,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/lib/slick/slick/slick.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/lib/slick/slick/slick-theme.css" />
 
+	<!-- IMAGE MARKER -->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/lib/Image-Marker/jquery.image-marker.css" />
+
 	<!-- INDEX CSS -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/index.css?8">
 
@@ -76,7 +79,7 @@
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3251'); ?>
+										<?php $the_query = new WP_Query('page_id=3304'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
@@ -199,7 +202,7 @@
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3251'); ?>
+										<?php $the_query = new WP_Query('page_id=3304'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>

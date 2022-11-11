@@ -86,6 +86,55 @@ get_header();
             </div>
         </div>
     </div>
+
+    <section class="bg-white app-one">
+        <div class="container">
+            <div class="app-title">
+                <div class="sub">
+                    Sau khi cài đặt APP
+                </div>
+                <h3>Chưa đăng nhập tài khoản ?</h3>
+                <div class="desc">
+                    Xem được toàn bộ các thông tin được công khai đến từ SPA.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="element"></div>
+            <!-- <div id="add_pos_marker">Add Positive dot</div>
+            <div id="add_neg_marker">Add Negative dot</div>
+            <div id="save">Save</div> -->
+        </div>
+    </section>
+    <section id="screenshots" class="screenshots-section app-two">
+        <div class="container">
+            <div class="app-title">
+                <div class="sub">
+                    Ảnh chụp màn hình
+                </div>
+                <h3>Chức năng khác ?</h3>
+                <div class="desc">
+                    Các chức năng khác bạn có thể xem được khi chưa đăng nhập tài khoản.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--start app screen carousel-->
+            <div class="screen-slider-content mt-5">
+                <div class="screenshot-frame"></div>
+                <div class="screen-carousel owl-carousel owl-theme dot-indicator">
+                    <img src="https://appco.themetags.com/rtl/img/01.png" class="img-fluid" alt="screenshots">
+                    <img src="https://appco.themetags.com/rtl/img/02.png" class="img-fluid" alt="screenshots">
+                    <img src="https://appco.themetags.com/rtl/img/03.png" class="img-fluid" alt="screenshots">
+                    <img src="https://appco.themetags.com/rtl/img/04.png" class="img-fluid" alt="screenshots">
+                    <img src="https://appco.themetags.com/rtl/img/05.png" class="img-fluid" alt="screenshots">
+                    <img src="https://appco.themetags.com/rtl/img/06.png" class="img-fluid" alt="screenshots">
+                </div>
+            </div>
+            <!--end app screen carousel-->
+
+        </div>
+    </section>
 </div>
 <div class="footer-pattern-hidden bg-white">
     <img src="<?php echo get_template_directory_uri() ?>/assets/img/pattern-5.png" alt="logo">

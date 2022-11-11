@@ -342,6 +342,210 @@ header {
     line-height: 17px;
 }
 
+
+/* ******** */
+
+.image-marker-container {
+    height: 580px;
+    overflow: visible;
+}
+
+.image-marker-container__img {
+    width: 100%;
+    max-height: initial;
+}
+
+.image-marker-container__box--image {
+    background: transparent;
+    border: 0;
+}
+
+.yello {
+    background-color: rgba(255, 145, 0, 0.15);
+    border-color: #ff9100;
+}
+
+.green {
+    background-color: rgba(125, 189, 59, 0.15);
+    border-color: #7dbd3b;
+}
+
+.image-marker__dot.yello,
+.image-marker__line.yello {
+    background-color: #ff9100;
+}
+
+.image-marker__dot.green,
+.image-marker__line.green {
+    background-color: #7dbd3b;
+}
+
+.image-marker__dot {
+    width: 10px;
+    height: 10px;
+}
+
+.image-marker__text-box {
+    /* flex-grow: 1; */
+    height: 136px;
+    border-radius: 0.42rem;
+    -webkit-box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+    box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+    background: #fff;
+    padding: 15px;
+}
+
+.image-marker__text-box:last-child {
+    margin-bottom: 0;
+}
+
+.image-marker-container__box__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-marker-container__box {
+    border: 0;
+}
+
+.image-marker__text-box__close-btn {
+    display: none !important;
+}
+
+.image-marker__text-box__title {
+    font-family: Roboto, sans-serif;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.image-marker__text-box__content {
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    margin-top: 12px;
+    line-height: 22px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+/*sccreenshot css*/
+
+.screen-slider-content {
+    position: relative
+}
+
+.screenshot-frame {
+    background-image: url('../img/app/phone-frame2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 327px;
+    height: 598px;
+    position: absolute;
+    top: -10px;
+    left: calc(50% + 0.5px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 40px;
+    pointer-events: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+    .screenshot-frame {
+        display: none;
+    }
+}
+
+.screen-carousel .owl-item img {
+    -webkit-transform: scale(.85);
+    transform: scale(.85);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #ebebeb;
+    border-radius: 30px
+}
+
+.screen-carousel .owl-item.active.center img {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.dot-indicator.owl-theme button {
+    /* padding: 0; */
+    border: 0;
+    background: transparent;
+}
+
+.dot-indicator.owl-theme button.owl-dot span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    background: #d8d8d8;
+    border-radius: 50%;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+
+.dot-indicator.owl-theme button.owl-dot:focus {
+    border: none;
+    outline: none;
+}
+
+.dot-indicator.owl-theme button.owl-dot.active span {
+    background: #9629e6;
+    border: 2px solid transparent;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.screen-carousel.dot-indicator.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ******** */
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.app-title .sub {
+    text-transform: uppercase;
+    line-height: 20px;
+    color: #ff898d;
+}
+
+.app-title h3 {
+    margin: 10px 0 15px;
+    font-size: 50px;
+}
+
+.app-title .desc {
+    color: #707070;
+    font-weight: 300;
+}
+
+.app-one,
+.app-two {
+    padding: 70px 0;
+}
+
 @keyframes move-wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1);
@@ -384,9 +588,11 @@ header {
 .app-section-1 .app-1-text {
     padding-right: 30px;
 }
+
 .app-section-1 .app-1-text h3 {
     font-size: 50px;
 }
+
 .app-section-1 .app-1-text .desc {
     margin-bottom: 15px;
     line-height: 1.7;
@@ -394,6 +600,7 @@ header {
     font-weight: 300;
     color: #716c80;
 }
+
 .app-section-1 .app-1-text .sub {
     color: #262A37;
     font-size: 20px;
@@ -401,6 +608,7 @@ header {
     font-weight: 700;
     margin-top: 30px;
 }
+
 .app-section-1 .app-1-text ul li {
     margin-top: 10px;
     line-height: 1.7;
@@ -408,6 +616,7 @@ header {
     font-weight: 300;
     color: #716c80;
 }
+
 body {
     background: #444;
 }
