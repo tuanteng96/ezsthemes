@@ -35,6 +35,9 @@
 	<!-- IMAGE MARKER -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/lib/Image-Marker/jquery.image-marker.css" />
 
+	<!-- SCALIZE -->
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/lib/scalize/scalize.min.js" />
+
 	<!-- INDEX CSS -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/index.css?8">
 

@@ -8,10 +8,6 @@ get_header();
 ?>
 <div id="main">
     <div class="video-outstanding">
-        <span class="pm-banner-shape1 position-absolute" data-parallax='{"y" : 100}'><img src="<?php echo get_template_directory_uri() ?>/assets/img/video-outstanding/5.png" alt></span>
-        <span class="pm-banner-shape2 position-absolute" data-parallax='{"y" : -100}'><img src="<?php echo get_template_directory_uri() ?>/assets/img/video-outstanding/5.png" alt></span>
-        <span class="pm-banner-shape3 position-absolute" data-parallax='{"y" : 100}'><img src="<?php echo get_template_directory_uri() ?>/assets/img/video-outstanding/5.png" alt></span>
-        <span class="pm-banner-shape4 position-absolute" data-parallax='{"y" : -100}'><img src="<?php echo get_template_directory_uri() ?>/assets/img/video-outstanding/5.png" alt></span>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
@@ -123,12 +119,91 @@ get_header();
             <div class="screen-slider-content mt-5">
                 <div class="screenshot-frame"></div>
                 <div class="screen-carousel owl-carousel owl-theme dot-indicator">
-                    <img src="https://appco.themetags.com/rtl/img/01.png" class="img-fluid" alt="screenshots">
-                    <img src="https://appco.themetags.com/rtl/img/02.png" class="img-fluid" alt="screenshots">
-                    <img src="https://appco.themetags.com/rtl/img/03.png" class="img-fluid" alt="screenshots">
-                    <img src="https://appco.themetags.com/rtl/img/04.png" class="img-fluid" alt="screenshots">
-                    <img src="https://appco.themetags.com/rtl/img/05.png" class="img-fluid" alt="screenshots">
-                    <img src="https://appco.themetags.com/rtl/img/06.png" class="img-fluid" alt="screenshots">
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/01.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="50" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="200" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="300" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Danh sách bài viết</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/02.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="150" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="220" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Nội dung bài viết</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/03.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách cơ sở</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/04.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách mỹ phẩm</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/05.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách dịch vụ</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/06.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="250" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="260" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Chi tiết sản phẩm & dịch vụ</div>
+                    </div>
+                </div>
+            </div>
+            <!--end app screen carousel-->
+
+        </div>
+    </section>
+    <section id="screenshots" class="screenshots-section app-two bg-white">
+        <div class="container">
+            <div class="app-title">
+                <div class="sub">
+                    Ảnh chụp màn hình
+                </div>
+                <h3>Sau khi đăng nhập ?</h3>
+                <div class="desc">
+                    Các chức năng khác bạn có thể xem được khi đã đăng nhập tài khoản.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--start app screen carousel-->
+            <div class="screen-slider-content mt-5">
+                <div class="screenshot-frame"></div>
+                <div class="screen-carousel owl-carousel owl-theme dot-indicator">
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/01.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="50" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="200" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="300" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Danh sách bài viết</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/02.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="150" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="220" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Nội dung bài viết</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/03.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách cơ sở</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/04.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách mỹ phẩm</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/05.png" class="img-fluid" alt="screenshots">
+                        <div class="scalize-text text-center">Danh sách dịch vụ</div>
+                    </div>
+                    <div class="scalize w-100 position-relative">
+                        <img src="https://appco.themetags.com/rtl/img/06.png" class="img-fluid" alt="screenshots">
+                        <a tabindex="0" class="item-point" data-top="250" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <a tabindex="1" class="item-point" data-top="260" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
+                        <div class="scalize-text text-center">Chi tiết sản phẩm & dịch vụ</div>
+                    </div>
                 </div>
             </div>
             <!--end app screen carousel-->
