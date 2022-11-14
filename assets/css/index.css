@@ -26,6 +26,10 @@ body a:hover {
     max-width: 1300px;
 }
 
+.bs-popover-right>.arrow {
+    top: 12px !important;
+}
+
 @media (max-width: 1330px) {
     .container-fluid-mx {
         padding: 0 30px;
