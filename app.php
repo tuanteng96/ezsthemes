@@ -52,7 +52,7 @@ get_header();
     <div class="bg-light-app app-section-1">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="app-1-text">
                         <h3>App hoạt động như thế nào ?</h3>
                         <div class="desc">
@@ -74,9 +74,10 @@ get_header();
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="app-1-img">
-                        <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-img7.png" alt="">
+                        <!-- <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-img7.png" alt="App hoạt động như thế nào ?"> -->
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-hoat-dong-the-nao.png" alt="App hoạt động như thế nào ?">
                     </div>
                 </div>
             </div>
@@ -288,7 +289,8 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="app-noti__img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/img2.png" alt="">
+                        <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/img2.png" alt=""> -->
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-bao-app.png" alt="Gửi tin nhắn miễn phí đến khách hàng">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -345,7 +347,17 @@ get_header();
                 </div>
                 <div class="col-md-7">
                     <div class="imgs">
-                        <img class="w-100 img-1" src="<?php echo get_template_directory_uri() ?>/assets/img/app/h1-2.png" alt="">
+                        <div class="owl-thongke owl-carousel owl-theme">
+                            <div class="item">
+                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-1.jpg" alt="Thống kê sử dụng APP">
+                            </div>
+                            <div class="item">
+                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-2.jpg" alt="Thống kê sử dụng APP">
+                            </div>
+                            <div class="item">
+                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-3.jpg" alt="Thống kê sử dụng APP">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

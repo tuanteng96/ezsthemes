@@ -6,6 +6,17 @@ $(document).ready(function() {
     EzsListCustomer.init()
     EzsImageMarker.init()
 
+    $('.owl-thongke').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        items: 1,
+        autoplay: false,
+        autoplayTimeout: 4500,
+        autoplayHoverPause: false,
+    })
+
     $('[data-toggle="popover"]').popover({
         trigger: 'focus'
     })

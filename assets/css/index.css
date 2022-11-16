@@ -782,6 +782,42 @@ header {
     pointer-events: none;
 }
 
+.app-sir .imgs {
+    background-image: url(../img/app/applify-browser-mockup.png);
+    padding-top: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0 7px 15px rgb(0 9 128 / 5%), 0 12px 28px rgb(0 9 128 / 8%);
+    background-color: #fff;
+    border-radius: 4px;
+    padding-left: 1px;
+    padding-right: 1px;
+    position: relative;
+}
+
+.app-sir .imgs .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    z-index: 2;
+}
+
+.app-sir .imgs .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 100%;
+    outline: none;
+    margin: 0 5px;
+    padding: 0;
+    background: #ebedef;
+}
+
+.app-sir .imgs .owl-dots .owl-dot.active {
+    background: #f26452;
+}
+
 @keyframes move-wave {
     0% {
         transform: translateX(0) translateZ(0) scaleY(1);
@@ -819,6 +855,11 @@ header {
     background: linear-gradient(44.44deg, #ed2775 7.79%, #ff7448 94.18%);
     transform: translateX(-50%);
     aspect-ratio: 1 / 1;
+}
+
+.app-section-1 .app-1-img img {
+    max-width: 1065px;
+    box-shadow: 0 7px 15px rgb(0 9 128 / 5%), 0 12px 28px rgb(0 9 128 / 8%);
 }
 
 .app-section-1 .app-1-text {

@@ -205,7 +205,11 @@
 										<?php endwhile; ?>
 									</li>
 									<li>
+<<<<<<< HEAD
 										<?php $the_query = new WP_Query('page_id=3304'); ?>
+=======
+										<?php $the_query = new WP_Query('page_id=3251'); ?>
+>>>>>>> 844655a5d2d5d94ade015251d912884e4442c9ce
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
