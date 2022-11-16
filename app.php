@@ -10,9 +10,12 @@ get_header();
     <div class="video-outstanding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
-                    <span class="pm-title-tag">APP KHÁCH HÀNG</span>
-                    <h1>Gồm 2 phiên bản trên thiết bị ANDROID & IOS </h1>
+                <div class="col-lg-7 col-xl-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                    <span class="pm-title-tag">ĐIỂM NỔI BẬT</span>
+                    <h1>
+                        <div>APP thương hiệu riêng</div>
+                        <div>2 Phiên bản ANDROID & IOS</div>
+                    </h1>
                     <div class="text-white font-weight-light">
                         Được tải và cài đặt chính thống trên kho ứng dụng miễn phí của <span class="font-weight-bold">APP STORE & CH PLAY</span> hoặc có thể thực hiện quét <span class="font-weight-bold">QR Code</span> tại quầy SPA để cài đặt.
                     </div>
@@ -28,10 +31,10 @@ get_header();
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5 col-xl-6">
                     <a href="#" data-toggle="modal" data-target="#modal-video">
                         <div class="video-outstanding__video text-right">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/hinh-anh-app.png" alt="HÌnh ảnh app">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/hinh-anh-app.png" alt="Hình ảnh app">
                         </div>
                     </a>
                 </div>
@@ -177,7 +180,7 @@ get_header();
         <div class="app-three__content">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-7">
+                    <div class="col-md-12 col-lg-7">
                         <div class="content-left">
                             <div class="mb-5">
                                 <h2>Đăng nhập tài khoản</h2>
@@ -221,7 +224,7 @@ get_header();
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 d-flex align-items-end">
+                    <div class="col-md-12 col-lg-5 d-flex align-items-end">
                         <figure class="subscribe-image">
                             <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/img24.png" alt="">
                         </figure>
@@ -287,13 +290,13 @@ get_header();
         <div class="overlay"></div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="app-noti__img">
                         <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/img2.png" alt=""> -->
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-bao-app.png" alt="Gửi tin nhắn miễn phí đến khách hàng">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="app-noti__content">
                         <div class="sub">Đối với những khách đã đăng nhập</div>
                         <h2>Gửi tin nhắn miễn phí đến khách hàng</h2>
@@ -324,7 +327,7 @@ get_header();
     <section class="app-sir bg-white">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-md-12">
                     <div>
                         <h2>Thống kê đo lường</h2>
                         <div>
@@ -345,7 +348,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-12">
                     <div class="imgs">
                         <div class="owl-thongke owl-carousel owl-theme">
                             <div class="item">

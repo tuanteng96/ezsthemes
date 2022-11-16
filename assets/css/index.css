@@ -289,6 +289,7 @@ header {
 .video-outstanding__video img {
     max-width: 470px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .wpb_wrapper {
@@ -7313,5 +7314,75 @@ img {
     }
     #email .table-data {
         padding-left: 5px;
+    }
+}
+
+@media (max-width: 1640px) {
+    .video-outstanding__video img {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .video-outstanding {
+        height: auto;
+        padding: 135px 0;
+    }
+    .video-outstanding h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .video-outstanding {
+        height: auto;
+        padding: 135px 0;
+    }
+}
+
+@media (max-width: 993px) {
+    .video-outstanding {
+        padding: 70px 0 150px;
+    }
+    .video-outstanding__video {
+        margin-top: 20px;
+    }
+    .video-outstanding__video img {
+        max-width: 100%;
+    }
+    .video-outstanding h1, .video-outstanding h1 ~ div.text-white {
+        text-align: center;
+    }
+    .app-three .content-left {
+        padding: 90px 0px 100px 0px;
+        text-align: center;
+    }
+    .app-title .desc {
+        text-align: center;
+    }
+    .screenshots-section.app-two {
+        padding: 120px 0 70px;
+    }
+    .app-noti .app-noti__img {
+        padding-right: 0px;
+        margin-bottom: 50px;
+    }
+    .app-sir {
+        background-image: none;
+    }
+    .app-sir .imgs {
+        margin-top: 30px;
+    }
+    .app-section-1 .app-1-text {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .video-outstanding h1,
+    .app-section-1 .app-1-text h3, .app-title h3, .app-noti h2, .app-sir h2 {
+        font-size: 26px;
+        line-height: 40px;
     }
 }
