@@ -625,8 +625,9 @@ header {
 
 .screen-carousel.dot-indicator.owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 20px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    display: none;
 }
 
 
@@ -856,11 +857,12 @@ header {
     background: linear-gradient(44.44deg, #ed2775 7.79%, #ff7448 94.18%);
     transform: translateX(-50%);
     aspect-ratio: 1 / 1;
+    display: none;
 }
 
 .app-section-1 .app-1-img img {
     max-width: 1065px;
-    box-shadow: 0 7px 15px rgb(0 9 128 / 5%), 0 12px 28px rgb(0 9 128 / 8%);
+    /* box-shadow: 0 7px 15px rgb(0 9 128 / 5%), 0 12px 28px rgb(0 9 128 / 8%); */
 }
 
 .app-section-1 .app-1-text {
@@ -885,6 +887,7 @@ header {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .app-section-1 .app-1-text ul li {
@@ -893,6 +896,27 @@ header {
     font-size: 18px;
     font-weight: 300;
     color: #716c80;
+    display: flex;
+}
+
+.app-section-1 .app-1-text ul li .num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 17px;
+    background-image: -moz-linear-gradient(140deg, #f26452 0%, #ffd7d2 100%);
+    background-image: -webkit-linear-gradient(140deg, #f26452 0%, #ffd7d2 100%);
+    background-image: -ms-linear-gradient(140deg, #f26452 0%, #ffd7d2 100%);
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.app-section-1 .app-1-text ul li .val {
+    flex: 1;
+    padding-left: 12px;
 }
 
 .app-noti {
@@ -7351,7 +7375,8 @@ img {
     .video-outstanding__video img {
         max-width: 100%;
     }
-    .video-outstanding h1, .video-outstanding h1 ~ div.text-white {
+    .video-outstanding h1,
+    .video-outstanding h1~div.text-white {
         text-align: center;
     }
     .app-three .content-left {
@@ -7377,12 +7402,28 @@ img {
     .app-section-1 .app-1-text {
         padding-right: 0px;
     }
+    .app-section-1 .app-1-img {
+        padding-left: 0px;
+    }
+    .app-section-1 .app-1-img img {
+        max-width: 100%;
+    }
+    .app-section-1 .app-1-text .sub,
+    .app-section-1 h3 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
     .video-outstanding h1,
-    .app-section-1 .app-1-text h3, .app-title h3, .app-noti h2, .app-sir h2 {
+    .app-section-1 .app-1-text h3,
+    .app-title h3,
+    .app-noti h2,
+    .app-sir h2 {
         font-size: 26px;
         line-height: 40px;
+    }
+    .video-outstanding {
+        padding: 90px 0 150px;
     }
 }

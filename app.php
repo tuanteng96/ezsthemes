@@ -55,32 +55,36 @@ get_header();
     <div class="bg-light-app app-section-1">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="app-1-text">
-                        <h3>App hoạt động như thế nào ?</h3>
-                        <div class="desc">
-                            APP được kết nối trực tiếp vào phần mềm quản lý SPA ( Đồng bộ hóa toàn bộ dữ liệu từ phần mềm quản lý ).
-                        </div>
+                        <h3>App kết nối trực tiếp <br /> vào phần mềm quản lý</h3>
                         <div class="sub">
                             Lợi ích đồng bộ dữ liệu
                         </div>
                         <ul>
                             <li>
-                                Khi cập nhập bất cứ thông tin gì lên phần mềm ( Sản phẩm mới, dịch vụ với, các chương trình ưu đãi ) thì ngay lập tức các thông tin trên APP mà khách hàng cài đặt sẽ được cập nhập theo.
+                                <div class="num">1</div>
+                                <div class="val">
+                                    Khi cập nhập bất cứ thông tin gì lên phần mềm ( Sản phẩm mới, dịch vụ với, các chương trình ưu đãi ) thì ngay lập tức các thông tin trên APP mà khách hàng cài đặt sẽ được cập nhập theo.
+                                </div>
                             </li>
                             <li>
-                                Khi khách hàng đặt lịch, mua hàng hay Live Chat thì các nhân viên lễ tân tại SPA sẽ nhận được thông tin để xử lý yêu cầu từ khách hàng.
+                                <div class="num">2</div>
+                                <div class="val"> Khi khách hàng đặt lịch, mua hàng hay Live Chat thì các nhân viên lễ tân tại SPA sẽ nhận được thông tin để xử lý yêu cầu từ khách hàng.</div>
                             </li>
                             <li>
-                                Giúp khách hàng có thể quản lý thẻ dịch vụ, công nợ, đơn hàng, ví điện tử, ... của mình tại SPA.
+                                <div class="num">3</div>
+                                <div class="val">
+                                    Giúp khách hàng có thể quản lý thẻ dịch vụ, công nợ, đơn hàng, ví điện tử, ... của mình tại SPA.
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6">
                     <div class="app-1-img">
                         <!-- <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-img7.png" alt="App hoạt động như thế nào ?"> -->
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-hoat-dong-the-nao.png" alt="App hoạt động như thế nào ?">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/app/app-ket-noi-truc-tiep-vao-phan-mem.png" alt="App hoạt động như thế nào ?">
                     </div>
                 </div>
             </div>
@@ -105,9 +109,14 @@ get_header();
             <div id="add_neg_marker">Add Negative dot</div>
             <div id="save">Save</div> -->
         </div>
+        <div class="app-title mb-0 mt-5">
+            <div class="desc">
+                Trang chủ màn hình APP
+            </div>
+        </div>
     </section>
     <section id="screenshots" class="screenshots-section app-two">
-        <div class="container">
+        <!-- <div class="container">
             <div class="app-title">
                 <div class="sub">
                     Ảnh chụp màn hình
@@ -117,7 +126,7 @@ get_header();
                     Các chức năng khác bạn có thể xem được khi chưa đăng nhập tài khoản.
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <!--start app screen carousel-->
             <div class="screen-slider-content mt-5">
@@ -226,7 +235,7 @@ get_header();
                     </div>
                     <div class="col-md-12 col-lg-5 d-flex align-items-end">
                         <figure class="subscribe-image">
-                            <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/img24.png" alt="">
+                            <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/dang-ky-va-dang-nhap.png" alt="Đăng ký và đăng nhập trên APP">
                         </figure>
                     </div>
                 </div>
@@ -237,9 +246,9 @@ get_header();
     <section id="screenshots" class="screenshots-section app-two">
         <div class="container">
             <div class="app-title">
-                <div class="sub">
+                <!-- <div class="sub">
                     Ảnh chụp màn hình
-                </div>
+                </div> -->
                 <h3>Sau khi đăng nhập ?</h3>
                 <div class="desc">
                     Các chức năng khác bạn có thể xem được khi đã đăng nhập tài khoản.
@@ -298,8 +307,8 @@ get_header();
                 </div>
                 <div class="col-md-12 col-lg-6">
                     <div class="app-noti__content">
-                        <div class="sub">Đối với những khách đã đăng nhập</div>
-                        <h2>Gửi tin nhắn miễn phí đến khách hàng</h2>
+                        <!-- <div class="sub">Đối với những khách đã đăng nhập</div> -->
+                        <h2>Gửi tin nhắn miễn phí <br> đến khách hàng</h2>
                         <div class="note">Tin nhắn sau khi được gửi tới sẽ được bật trên màn hình chính như tin nhắn Zalo, Messager, ...</div>
                         <div>
                             <h5>Tin nhắn được gửi khi nào ?</h5>
@@ -352,13 +361,10 @@ get_header();
                     <div class="imgs">
                         <div class="owl-thongke owl-carousel owl-theme">
                             <div class="item">
-                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-1.jpg" alt="Thống kê sử dụng APP">
+                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-1.png" alt="Thống kê sử dụng APP">
                             </div>
                             <div class="item">
-                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-2.jpg" alt="Thống kê sử dụng APP">
-                            </div>
-                            <div class="item">
-                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-3.jpg" alt="Thống kê sử dụng APP">
+                                <img class="w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/app/thong-ke-2.png" alt="Thống kê sử dụng APP">
                             </div>
                         </div>
                     </div>
