@@ -145,19 +145,19 @@
 <!-- Your SDK code -->
 <script>
     $("a").on("click", function(e) {
-            if ($(this).parent().attr("class") != "menu-mobi__nav-item") {
-                if ($(this.hash).length != 0) {
-                    if ("" !== this.hash) {
-                        e.preventDefault();
-                        var i = this.hash;
-                        $("html, body").animate({
-                            scrollTop: $(i).offset().top
-                        }, 800, function() {
-                            window.location.hash = i;
-                        });
-                    }
-                }
-            }
+            // if ($(this).parent().attr("class") != "menu-mobi__nav-item") {
+            //     if ($(this.hash).length != 0) {
+            //         if ("" !== this.hash) {
+            //             e.preventDefault();
+            //             var i = this.hash;
+            //             $("html, body").animate({
+            //                 scrollTop: $(i).offset().top
+            //             }, 800, function() {
+            //                 window.location.hash = i;
+            //             });
+            //         }
+            //     }
+            // }
         }),
         setTimeout(function() {
             // window.fbAsyncInit = function() {

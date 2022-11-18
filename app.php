@@ -243,7 +243,7 @@ get_header();
         </div>
     </section>
 
-    <section id="screenshots" class="screenshots-section app-two">
+    <section id="screenshots" class="screenshots-section app-two app-twos">
         <div class="container">
             <div class="app-title">
                 <!-- <div class="sub">
@@ -253,46 +253,270 @@ get_header();
                 <div class="desc">
                     Các chức năng khác bạn có thể xem được khi đã đăng nhập tài khoản.
                 </div>
+                <div class="app-nav">
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="tab-1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Đặt hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab-2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Mua hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab-3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Quản lý thẻ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab-4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">Đơn hàng khác</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tab-5-tab" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false">Khác</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="container">
-            <div class="screen-slider-content mt-5">
-                <div class="screenshot-frame"></div>
-                <div class="screen-carousel screen-carousel2 owl-carousel owl-theme dot-indicator">
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/01.png" class="img-fluid" alt="screenshots">
-                        <a tabindex="0" class="item-point" data-top="50" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <a tabindex="1" class="item-point" data-top="200" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <a tabindex="1" class="item-point" data-top="300" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <div class="scalize-text text-center">Danh sách bài viết</div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                    <div class="owl-carousel owl-theme screenshots-owl">
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/1.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">1. Chọn cơ sở - Ngày giờ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/2.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">2. Chọn dịch vụ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/3.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">3. Xác nhận & Thêm ghi chú</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/4.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">4. Hoàn thành đặt lịch</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/02.png" class="img-fluid" alt="screenshots">
-                        <a tabindex="0" class="item-point" data-top="150" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <a tabindex="1" class="item-point" data-top="220" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <div class="scalize-text text-center">Nội dung bài viết</div>
+                </div>
+                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                    <div class="owl-carousel owl-theme screenshots-owl">
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/1.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">1. Chọn cơ sở - Ngày giờ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/2.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">2. Chọn dịch vụ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/3.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">3. Xác nhận & Thêm ghi chú</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/4.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">4. Hoàn thành đặt lịch</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/03.png" class="img-fluid" alt="screenshots">
-                        <div class="scalize-text text-center">Danh sách cơ sở</div>
+                </div>
+                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                    <div class="owl-carousel owl-theme screenshots-owl">
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/1.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">1. Chọn cơ sở - Ngày giờ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/2.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">2. Chọn dịch vụ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/3.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">3. Xác nhận & Thêm ghi chú</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/4.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">4. Hoàn thành đặt lịch</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/04.png" class="img-fluid" alt="screenshots">
-                        <div class="scalize-text text-center">Danh sách mỹ phẩm</div>
+                </div>
+                <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
+                    <div class="owl-carousel owl-theme screenshots-owl">
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/1.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">1. Chọn cơ sở - Ngày giờ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/2.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">2. Chọn dịch vụ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/3.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">3. Xác nhận & Thêm ghi chú</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/4.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">4. Hoàn thành đặt lịch</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/05.png" class="img-fluid" alt="screenshots">
-                        <div class="scalize-text text-center">Danh sách dịch vụ</div>
-                    </div>
-                    <div class="scalize w-100 position-relative">
-                        <img src="https://appco.themetags.com/rtl/img/06.png" class="img-fluid" alt="screenshots">
-                        <a tabindex="0" class="item-point" data-top="250" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <a tabindex="1" class="item-point" data-top="260" data-left="50" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?"></a>
-                        <div class="scalize-text text-center">Chi tiết sản phẩm & dịch vụ</div>
+                </div>
+                <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5-tab">
+                    <div class="owl-carousel owl-theme screenshots-owl">
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/1.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">1. Chọn cơ sở - Ngày giờ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/2.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">2. Chọn dịch vụ</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/3.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">3. Xác nhận & Thêm ghi chú</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="screenshots-box">
+                                <div class="screenshots-img">
+                                    <img src="https://theme-land.com/appo/demo/assets/img/screenshots/4.png" class="img-fluid" alt="screenshots">
+                                </div>
+                                <div class="screenshots-text">
+                                    <div class="title">4. Hoàn thành đặt lịch</div>
+                                    <div class="desc">Bạn cần chọn cơ sở làm dịch vụ, Thời gian tới làm dịch vụ</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <div class="bg-white app-noti">

@@ -573,12 +573,6 @@ header {
     height: auto;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
-    .screenshot-frame {
-        display: none;
-    }
-}
-
 .screen-carousel .owl-item img {
     -webkit-transform: scale(.85);
     transform: scale(.85);
@@ -656,6 +650,35 @@ header {
     font-weight: 300;
 }
 
+.app-title .app-nav {
+    margin-top: 20px;
+} 
+
+.app-title .app-nav ul li a {
+    position: relative;
+    padding: 0 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.app-title .app-nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1px;
+    background: #dedede;
+    right: -15px;
+    top: 12px;
+}
+
+.app-title .app-nav ul li:last-child a:after {
+    display: none;
+}
+
+.app-title .app-nav ul li a:hover,
+.app-title .app-nav ul li a.active {
+    color: #f26353;
+}
+
 .app-one,
 .app-two {
     padding: 70px 0;
@@ -720,6 +743,7 @@ header {
     font-size: 26px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    line-height: 38px;
 }
 
 .app-three .content-left ul li:not(:last-child) {
@@ -6122,6 +6146,39 @@ img {
     max-width: 100%;
 }
 
+.screenshots-box .screenshots-img {
+    background: url("../img/app/mobile-slider.png");
+    padding: 70px 24px 80px 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.screenshots-box .screenshots-img {
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.screenshots-box .screenshots-text {
+    text-align: center;
+    padding: 20px 15px 0 15px;
+}
+
+.screenshots-box .screenshots-text .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #181C32;
+    transition: all 300ms ease-in;
+    font-weight: 600;
+}
+
+.screenshots-box .screenshots-text .desc {
+    color: #707070;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
 @media (min-width: 992px) {
     .about-main .container {
         padding: 0 5%;
@@ -7358,10 +7415,59 @@ img {
     }
 }
 
+@media (max-width: 1366px) {
+    .screenshot-frame {
+        width: 395px;
+        height: 700px;
+    }
+}
+
 @media (max-width: 1200px) {
     .video-outstanding {
         height: auto;
         padding: 135px 0;
+    }
+    .image-marker-container {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image-marker-container__box {
+        width: 50%;
+        left: 0;
+        right: 0;
+        position: relative;
+        order: 1;
+    }
+    .image-marker-container__box.image-marker-container__box--left {
+        padding-right: 10px;
+    }
+    .image-marker-container__box.image-marker-container__box--right {
+        padding-left: 10px;
+    }
+    .image-marker-container__box.image-marker-container__box--image {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 0;
+        display: block;
+    }
+    .image-marker__line,
+    .image-marker__dot {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .screenshot-frame {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .screenshot-frame {
+        width: 275px;
+        height: 485px;
     }
 }
 
@@ -7412,6 +7518,12 @@ img {
     .app-section-1 h3 {
         text-align: center;
     }
+    .app-title .app-nav ul {
+        justify-content: center;
+    }
+    .app-title .app-nav ul li {
+        margin-top: 12px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -7422,8 +7534,30 @@ img {
     .app-sir h2 {
         font-size: 26px;
         line-height: 40px;
+        text-align: center;
     }
     .video-outstanding {
         padding: 90px 0 150px;
+    }
+    .app-title .app-nav ul li a {
+        font-size: 15px;
+    }
+    .image-marker-container__box {
+        width: 100%;
+    }
+    .image-marker-container__box.image-marker-container__box--left {
+        padding-right: 0px;
+    }
+    .image-marker-container__box.image-marker-container__box--right {
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+    .app-section-1,
+    .app-one, 
+    .app-two {
+        padding: 50px 0;
+    }
+    .screenshots-section.app-two:not(.app-twos) {
+        padding: 30px 0 50px;
     }
 }
