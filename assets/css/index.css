@@ -582,6 +582,10 @@ header {
     border-radius: 30px
 }
 
+.screen-carousel .owl-item.active.center .scalize {
+    padding: 5px 18px 0 18px;
+}
+
 .screen-carousel .owl-item.active.center img {
     -webkit-transform: scale(1);
     transform: scale(1)
@@ -652,7 +656,7 @@ header {
 
 .app-title .app-nav {
     margin-top: 20px;
-} 
+}
 
 .app-title .app-nav ul li a {
     position: relative;
@@ -7463,7 +7467,6 @@ img {
     }
 }
 
-
 @media (max-width: 1024px) {
     .screenshot-frame {
         width: 275px;
@@ -7553,11 +7556,24 @@ img {
         margin-top: 10px;
     }
     .app-section-1,
-    .app-one, 
+    .app-one,
     .app-two {
         padding: 50px 0;
     }
     .screenshots-section.app-two:not(.app-twos) {
         padding: 30px 0 50px;
+    }
+    .screenshots-owl .owl-item .item {
+        width: calc(100vw - 135px) !important;
+    }
+    .screenshots-box .screenshots-text .title {
+        font-size: 15px;
+    }
+    .wpb_wrapper .custom-btn:first-child {
+        margin-right: 5px;
+    }
+    .wpb_wrapper .custom-btn {
+        min-width: 165px;
+        padding: 10px 15px;
     }
 }

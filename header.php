@@ -350,6 +350,12 @@
 							<li>
 								<?php $the_query = new WP_Query('page_id=3197'); ?>
 								<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
+									<a class="popup-youtube" href="<?php the_field('url_video') ?>"><?php the_title(); ?></a>
+								<?php endwhile; ?>
+							</li>
+							<li>
+								<?php $the_query = new WP_Query('page_id=3304'); ?>
+								<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 									<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 								<?php endwhile; ?>
 							</li>
