@@ -82,13 +82,13 @@
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3251'); ?>
+										<?php $the_query = new WP_Query('page_id=3713'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3255'); ?>
+										<?php $the_query = new WP_Query('page_id=3748'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
@@ -211,13 +211,13 @@
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3251'); ?>
+										<?php $the_query = new WP_Query('page_id=3713'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
 									</li>
 									<li>
-										<?php $the_query = new WP_Query('page_id=3255'); ?>
+										<?php $the_query = new WP_Query('page_id=3748'); ?>
 										<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 											<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 										<?php endwhile; ?>
@@ -366,13 +366,13 @@
 								<?php endwhile; ?>
 							</li>
 							<li>
-								<?php $the_query = new WP_Query('page_id=3251'); ?>
+								<?php $the_query = new WP_Query('page_id=3713'); ?>
 								<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 									<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 								<?php endwhile; ?>
 							</li>
 							<li>
-								<?php $the_query = new WP_Query('page_id=3255'); ?>
+								<?php $the_query = new WP_Query('page_id=3748'); ?>
 								<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 									<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 								<?php endwhile; ?>

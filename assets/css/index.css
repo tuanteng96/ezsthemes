@@ -139,6 +139,8 @@ h3 {
 #software .software-content {
     overflow: hidden;
     position: relative;
+    max-width: 1903px;
+    margin: 0 auto;
 }
 
 #software .software-box .slick-dots li {
@@ -5242,8 +5244,8 @@ body:not(.home) .header-fixed__logo {
 }
 
 .frames-slide img {
-    width: calc(44vw - 140px);
-    height: calc(33vw - 110px);
+    width: calc(44% - 140px);
+    height: 100%;
     margin-top: -10px;
 }
 
@@ -5416,8 +5418,9 @@ body:not(.home) .header-fixed__logo {
 }
 
 .tool-section-1 {
-    background: linear-gradient(180deg, rgba(255,137,141,1) 35%, rgba(255,186,189,1) 100%);
+    background: linear-gradient(180deg, rgba(255, 137, 141, 1) 35%, rgba(255, 186, 189, 1) 100%);
     height: calc(100vh - 101px);
+    max-height: 620px;
 }
 
 .tool-section-1 .tool-section-1__box h2 {
@@ -5425,12 +5428,28 @@ body:not(.home) .header-fixed__logo {
     font-size: 48px;
     font-weight: 600;
     line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.tool-section-1 .tool-section-1__box .sub {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .tool-section-1 .tool-section-1__box .desc {
     color: #fff;
     font-weight: 300;
     line-height: 32px;
+    margin-top: 30px;
+}
+
+.tool-section-1 .sub-desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 15px;
 }
 
 .tool-section-2 .tool-section-2__bg {
@@ -5439,21 +5458,30 @@ body:not(.home) .header-fixed__logo {
     padding: 365px 0;
 }
 
-.tool-section-2 ._btn {
+.tool-section-4 .tool-section-4__container {
+    padding: 70px 0;
+}
+
+.tool-section-4 .tool-section-4__container:not(:nth-child(2n+0)) {
+    background: #fff;
+}
+
+.tool-section-4 ._btn {
     color: #f37566;
     display: inline-block;
     border: 1px solid #f37566;
     margin-top: 20px;
-    height: 46px;
-    line-height: 44px;
+    height: 43px;
+    line-height: 43px;
     padding: 0 20px;
     border-radius: 4px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     transition: all .2s linear;
+    background: #fff;
 }
 
-.tool-section-2 ._btn:hover {
+.tool-section-4 ._btn:hover {
     color: #ffffff;
     background: #f37566;
 }
@@ -5505,6 +5533,78 @@ body:not(.home) .header-fixed__logo {
     color: #fff;
 }
 
+.tool-section-3 {
+    padding: 70px 0 0 0;
+}
+
+.tool-section-3 .img img {
+    border-radius: 10px;
+}
+
+.tool-section-3 .title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #1d1d1f;
+    padding: 0 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tool-section-3 .desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.tool-section-3 ._btn {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.tool-section-4 {
+    padding: 50px 0 90px;
+}
+
+.tool-section-4 .tool-section-4__row:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.tool-section-4 .tool-section-4__row {
+    align-items: center;
+}
+
+.tool-section-4 .tool-section-4__row .box-text {
+    padding: 0 70px 0 70px;
+}
+
+.tool-section-4 .tool-section-4__row:nth-child(2n+0) .box-text {
+    padding: 0 70px 0 70px;
+}
+
+.tool-section-4 h2 {
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.tool-section-4 .desc {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.tool-section-4 .desc-sub {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 12px;
+    color: #828282;
+}
+
 @media (max-width: 1200px) {
     .tool-section-1 {
         max-height: 500px;
@@ -5526,8 +5626,13 @@ body:not(.home) .header-fixed__logo {
     .tool-section-2 {
         flex-direction: column;
     }
-    .tool-section-2 > .w-50 {
+    .tool-section-2>.w-50 {
         width: 100% !important;
+    }
+    .tool-section-4 h2 {
+        line-height: 38px;
+        font-size: 30px;
+        margin-bottom: 15px;
     }
 }
 
@@ -5562,6 +5667,26 @@ body:not(.home) .header-fixed__logo {
     }
     .tool-section-2 .tool-section-2__bg {
         padding: 200px 0;
+    }
+    .tool-section-4 .tool-section-4__row .box-text,
+    .tool-section-4 .tool-section-4__row:nth-child(2n+0) .box-text {
+        padding: 0;
+    }
+    .tool-section-4 h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .tool-section-4 .tool-section-4__row .box-text {
+        margin-top: 15px;
+    }
+    .tool-section-4 .tool-section-4__row:nth-child(2n+0)>div:nth-child(1) {
+        order: 1;
+    }
+    .tool-section-4 .tool-section-4__row:nth-child(2n+0)>div:nth-child(2) {
+        order: 0;
+    }
+    .tool-section-3 .col-md-4 {
+        margin-bottom: 30px;
     }
 }
 
