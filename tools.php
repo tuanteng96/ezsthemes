@@ -19,7 +19,7 @@ get_header();
                 <div class="col-md-6 h-100 d-flex align-items-center">
                     <div class="tool-section-1__box">
                         <h2>TÍCH HỢP THIẾT BỊ</h2>
-                        <div class="sub">EZS không kinh kinh doanh thiết bị</div>
+                        <div class="sub">EZS không kinh doanh thiết bị</div>
                         <div class="desc">
                             Hệ thống <b class="font-weight-bold">EZS</b> sử dụng các thiết bị thông dụng trên thị trường - quý khách hàng có thể mua trực tiếp tại bất cứ cửa hàng nào có giá tốt nhất và gần khu vực địa lý để được support và bảo hành tốt nhất. <br>
                         </div>
