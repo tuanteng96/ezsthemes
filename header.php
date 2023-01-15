@@ -477,4 +477,12 @@
 			</div>
 		</div>
 	</header>
+
+	<div class="listen-advice">
+		<div class="bg"></div>
+		<div class="close"><i class="fal fa-times"></i></div>
+		<div class="listen-content">
+		</div>				
+	</div>
+
 	<?php wp_reset_postdata() ?>

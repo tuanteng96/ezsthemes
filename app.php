@@ -52,7 +52,14 @@ get_header();
             </div>
         </div>
     </div>
+
     <div class="bg-light-app app-section-1">
+        <div class="container">
+            <div class="app-slugon">
+                <div class="app-slugon-title">Không cần nhân viên thiết kế, marketing, nội dung - Khách cài đặt App ngay ngày đầu tiên triển khai phần mềm</div>
+                <div class="app-slugon-desc">Bao gồm phiên bản cơ bản để triển khai nhanh mà không cần chờ hình ảnh,nội dung sản phẩm, dịch vụ. Có thể tự chuyển sang bản đầy đủ khi hoàn thiện nội dung.</div>
+            </div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-12 col-lg-6">

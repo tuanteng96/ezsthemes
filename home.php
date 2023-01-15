@@ -15,7 +15,7 @@ get_header();
                         Pro</span>
                     <h1 class="text-white">Phần mềm quản lý <br />Spa / Thẩm mỹ viện</h1>
                     <p class="text-white">Tích hợp App (Ứng dụng điện thoại) & Website giới thiệu thương hiệu riêng giúp quản lý hiệu quả - tăng doanh thu & tìm kiếm khách hàng mới</p>
-                    <div class="main-head__view-more">Trải nghiệm miễn phí</div>
+                    <div class="main-head__view-more btn-listen d-none">Nghe tư vấn Online</div>
                 </div>
                 <div class="col-2 col-md-2">
 
