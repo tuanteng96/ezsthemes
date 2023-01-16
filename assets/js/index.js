@@ -1,5 +1,5 @@
 var myTimeout = null
-$(document).ready(function () {
+$(document).ready(function() {
     // Price Change ====================
     EzsChangePrice.init()
     EzsFC.init()
@@ -7,7 +7,16 @@ $(document).ready(function () {
     EzsImageMarker.init()
     EzsListen.init()
 
-    $(".btn-listen").click(function () {
+    var options = {
+        strings: ['Vận hành APP ngay khi Spa không có <i> nhân viên phụ trách hình ảnh, nội dung.</i>'],
+        typeSpeed: 30,
+        loop: true
+    };
+    if ($('.element-typed').length > 0) {
+        var typed = new Typed('.element-typed', options);
+    }
+
+    $(".btn-listen").click(function() {
         const Audio = document.getElementById('audio-listen');
         $(".listen-advice").addClass('show')
         $('body').addClass('listen-show')
@@ -17,7 +26,7 @@ $(document).ready(function () {
         }
     })
 
-    $(".listen-advice .bg, .listen-advice .close").click(function () {
+    $(".listen-advice .bg, .listen-advice .close").click(function() {
         $(".listen-advice").removeClass('show')
         $('body').removeClass('listen-show')
         const Audio = document.getElementById('audio-listen');
@@ -32,14 +41,14 @@ $(document).ready(function () {
         if (Audio) {
             callback && callback()
         } else {
-            setTimeout(function () {
+            setTimeout(function() {
                 checkAudio(callback)
             }, 50)
         }
     }
 
-    if (window.location.hash && window.location.hash == '#nghe-tu-van-online' ) {
-        checkAudio(function(){
+    if (window.location.hash && window.location.hash == '#nghe-tu-van-online') {
+        checkAudio(function() {
             $(".btn-listen").trigger('click')
         })
     }
@@ -59,7 +68,7 @@ $(document).ready(function () {
         trigger: 'focus'
     })
 
-    $(".item-point").each(function () {
+    $(".item-point").each(function() {
         const top = $(this).attr("data-top");
         const left = $(this).attr("data-left");
         $(this).css({
@@ -95,9 +104,9 @@ $(document).ready(function () {
 
     EzsImageMarker.onChangOwl(".screen-carousel1")
 
-    owlScreen1.on('changed.owl.carousel', function (event) {
+    owlScreen1.on('changed.owl.carousel', function(event) {
         $('.screen-carousel1 [data-toggle="popover"]').popover('hide')
-        setTimeout(function () {
+        setTimeout(function() {
             EzsImageMarker.onChangOwl(".screen-carousel1")
         }, 1000)
     })
@@ -133,7 +142,7 @@ $(document).ready(function () {
         fixedContentPos: false
     });
 
-    $(".c-blogArticle_richText img").click(function () {
+    $(".c-blogArticle_richText img").click(function() {
         $.magnificPopup.open({
             items: {
                 src: $(this).attr('src')
@@ -143,25 +152,25 @@ $(document).ready(function () {
     })
 
     const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
-    //     const backLink = `<li class="nav-item">
-    // 	<a class="nav-link nav-back-link" href="javascript:;">
-    // 		Back
-    // 	</a>
-    // </li>`
+        //     const backLink = `<li class="nav-item">
+        // 	<a class="nav-link nav-back-link" href="javascript:;">
+        // 		Back
+        // 	</a>
+        // </li>`
 
     navExpand.forEach(item => {
-        //item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
-        item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
-        item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'))
-    })
-    // ====================
-    // $('.menu-mobi__icon-arrow').click(function () {
-    //     var t = $(this)
-    //     t.parent().next('ul').slideToggle()
-    //     t.find('i').toggleClass('fa-plus fa-minus')
-    //     t.parents('li').siblings().find('ul').slideUp()
-    //     t.parents('li').siblings().find('i').removeClass(' fa-minus').addClass('fa-plus')
-    // })
+            //item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
+            item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
+            item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'))
+        })
+        // ====================
+        // $('.menu-mobi__icon-arrow').click(function () {
+        //     var t = $(this)
+        //     t.parent().next('ul').slideToggle()
+        //     t.find('i').toggleClass('fa-plus fa-minus')
+        //     t.parents('li').siblings().find('ul').slideUp()
+        //     t.parents('li').siblings().find('i').removeClass(' fa-minus').addClass('fa-plus')
+        // })
 
     $('.-blog-main, .-blog-sidebar').theiaStickySidebar({
         // Settings
@@ -200,44 +209,44 @@ $(document).ready(function () {
         return i;
     }
     window.scrollY >= 750 ? $(".header-fixed").addClass("show") : $(".header-fixed").removeClass("show"),
-        $(".header-top__tool-search").click(function () {
+        $(".header-top__tool-search").click(function() {
             $(".box-search").addClass("show");
         }),
-        $(".header-fixed__tool-search").click(function () {
+        $(".header-fixed__tool-search").click(function() {
             $(".box-search").addClass("show");
         }),
-        $(".box-search__close svg").click(function () {
+        $(".box-search__close svg").click(function() {
             $(".box-search").removeClass("show");
         }),
         $(".arrow-active-move").on({
-            mouseenter: function () {
+            mouseenter: function() {
                 $(this).removeClass("arrow-active-move-out");
             },
-            mouseleave: function () {
+            mouseleave: function() {
                 $(this).addClass("arrow-active-move-out");
             },
         }),
-        $(".nav-menu").click(function () {
+        $(".nav-menu").click(function() {
             $(this).toggleClass("active"), $(".menu-mobi").toggleClass("show");
             $('body').toggleClass('overflow-hidden');
             if (!$(".menu-mobi").hasClass("show")) {
                 $(".nav-expand").removeClass("active")
             }
         }),
-        $(".mobile-bg").click(function () {
+        $(".mobile-bg").click(function() {
             $(".nav-menu").removeClass("active"), $(".menu-mobi").removeClass("show");
             $('body').removeClass('overflow-hidden');
             $(".nav-expand").removeClass("active");
         }),
         $(".header-top__menu-detail > ul > li ").hover(
-            function () {
+            function() {
                 var e = $(".header-top__menu-detail > ul > li").index(this);
                 $(this).find("span").addClass("active"), $(this).siblings().find("span").removeClass("active"), $(".menu-background-move").css({
                     width: $(this).width(),
                     left: a(e - 1)
                 });
             },
-            function () {
+            function() {
                 $(".menu-background-move").css({
                     width: 0,
                     left: 0
@@ -245,14 +254,14 @@ $(document).ready(function () {
             }
         ),
         $(".header-fixed__menu-detail > ul > li ").hover(
-            function () {
+            function() {
                 var e = $(".header-fixed__menu-detail > ul > li").index(this);
                 $(this).find("span").addClass("active"), $(this).siblings().find("span").removeClass("active"), $(".menu-fixed-background-move").css({
                     width: $(this).width(),
                     left: i(e - 1)
                 });
             },
-            function () {
+            function() {
                 $(".menu-fixed-background-move").css({
                     width: 0,
                     left: 0
@@ -260,14 +269,14 @@ $(document).ready(function () {
             }
         ),
         $(".header-search-index").hover(
-            function () {
+            function() {
                 var e = $(".header-search-index").index(this);
                 $(".search-background-move").css({
                     width: $(this).outerWidth(),
                     left: t(e)
                 });
             },
-            function () {
+            function() {
                 $(".search-background-move").css({
                     width: 0,
                     left: 0
@@ -275,14 +284,14 @@ $(document).ready(function () {
             }
         ),
         $(".header-fixed-search-index").hover(
-            function () {
+            function() {
                 var i = $(".header-search-index").index(this);
                 $(".search-fixed-background-move").css({
                     width: $(this).outerWidth(),
                     left: e(i)
                 });
             },
-            function () {
+            function() {
                 $(".search-fixed-background-move").css({
                     width: 0,
                     left: 0
@@ -316,17 +325,17 @@ $(document).ready(function () {
     }
 
     function n(e, i) {
-        setTimeout(function () {
+        setTimeout(function() {
             $(e).addClass("show translate-default");
         }, i);
     }
 
     function o(e, i, t) {
-        setTimeout(function () {
+        setTimeout(function() {
             $(e).eq(t).addClass("show translate-default");
         }, i);
     }
-    $(window).scroll(function (e) {
+    $(window).scroll(function(e) {
             var i = $(this).scrollTop();
             i > r ? window.scrollY >= 150 && $(".header-fixed").addClass("show") : window.scrollY < 150 && $(".header-fixed").removeClass("show"), (r = i);
         }),
@@ -411,24 +420,24 @@ $(document).ready(function () {
                 }
             },
         }),
-        $(".swiper-button-next").click(function () {
+        $(".swiper-button-next").click(function() {
             $(".review-app .owl-next").trigger("click");
         }),
-        $(".swiper-button-prev").click(function () {
+        $(".swiper-button-prev").click(function() {
             $(".review-app .owl-prev").trigger("click");
         }),
-        $(".topleft-view-more").click(function () {
+        $(".topleft-view-more").click(function() {
             $(".review-app__topleft p").fadeIn(400), $(".review-app__topleft h3").html("APP KHÁCH HÀNG").css("color", "#404040"), $(".review-app__topleft .review-app_tag").html("Màu sắc & Thương hiệu riêng"), $(this).hide();
         }),
         $(".review-app__slider-item").hover(
-            function () {
+            function() {
                 $(this).find(".app-img-after").addClass("hide-img"), $(this).find(".app-img-before").addClass("show-img");
             },
-            function () {
+            function() {
                 $(this).find(".app-img-after").removeClass("hide-img"), $(this).find(".app-img-before").removeClass("show-img");
             }
         ),
-        $(".review-app__slider-item").click(function () {
+        $(".review-app__slider-item").click(function() {
             if ($(this).attr("data-title").length >= 5) {
                 $(".modal-review-app img").attr("src", $(this).attr("data-title")),
                     $(".modal-view-next").attr("data-id", parseInt($(this).attr("data-id")) + 1),
@@ -437,10 +446,10 @@ $(document).ready(function () {
                     $(".shadow-behind").addClass("show-img");
             }
         }),
-        $(".shadow-behind").click(function () {
+        $(".shadow-behind").click(function() {
             $(".modal-review-app").removeClass("show-img"), $(".shadow-behind").removeClass("show-img");
         }),
-        $(".modal-view-pre").click(function () {
+        $(".modal-view-pre").click(function() {
             1 == $(this).attr("data-id") ? $(this).attr("data-id", 10) : $(this).attr("data-id", parseInt($(this).attr("data-id")) - 1),
                 $(".modal-review-app__img img").attr(
                     "src",
@@ -449,7 +458,7 @@ $(document).ready(function () {
                     .attr("data-title")
                 );
         }),
-        $(".modal-view-next").click(function () {
+        $(".modal-view-next").click(function() {
             10 == $(this).attr("data-id") ? $(this).attr("data-id", 1) : $(this).attr("data-id", parseInt($(this).attr("data-id")) + 1),
                 $(".modal-review-app__img img").attr(
                     "src",
@@ -459,10 +468,10 @@ $(document).ready(function () {
                 );
         }),
         $("#email .search-title input")
-        .focusin(function () {
+        .focusin(function() {
             $(".search-title__under-line").css("background", "#1d1d1f");
         })
-        .focusout(function () {
+        .focusout(function() {
             $(".search-title__under-line").css("background", "#d2d2d2");
         }),
 
@@ -479,7 +488,7 @@ $(document).ready(function () {
         window.outerWidth <= 1366 ?
         ($(".main-head__title .review-app_tag").html("Ưu đãi 80% | Tặng tài khoản Canva Pro"), l()) :
         ($(".main-head__title .review-app_tag").html("Ưu đãi lên đến 80% | Tặng tài khoản Canva Pro"), s()),
-        $(window).resize(function () {
+        $(window).resize(function() {
             window.outerWidth > 440 ?
                 $(".introduce-box__title .introduce-box__des-software").html("Kết nối phần mềm") :
                 window.outerWidth > 1024 && $("#main-footer .row .footer-title span").html("Đối tác không thể thiếu<br> khi bạn kinh doanh</br> SPA / Thẩm mỹ viện"),
@@ -497,7 +506,7 @@ $(document).ready(function () {
                 ($(".main-head__title .review-app_tag").html("Ưu đãi 80% | Tặng tài khoản Canva Pro"), l(), $(".main-head__title .review-app_tag").html("Ưu đãi 80% | Tặng tài khoản Canva Pro")) :
                 ($(".main-head__title .review-app_tag").html("Ưu đãi lên đến 80% | Tặng tài khoản Canva Pro"), s());
         }),
-        $("#domain").on("change", function () {
+        $("#domain").on("change", function() {
             1 == $(this).val() ?
                 ($(".domain").siblings().eq(0).html('\n                    <p class="old-price">250.000</p>\n                    <p class="new-price">Free</p>\n                '), $(".domain").siblings().eq(1).html("250.000")) :
                 2 == $(this).val() ?
@@ -541,18 +550,30 @@ var EzsChangePrice = {
                 dataset
             } = e.target;
             $(".domain-item-curent").html(innerText);
-            $(".domain-first").html(EzsChangePrice.formatVND(Number(dataset.valueFirst))).attr("data-price-frist", dataset.valueFirst)
-            $(".domain").html(EzsChangePrice.formatVND(Number(dataset.value))).attr("data-price", dataset.value)
+            $(".domain-first").html(EzsChangePrice.formatVND(Number(dataset.valueFirst))).attr({
+                "data-price-frist": dataset.valueFirst,
+                "data-price-year-old": dataset.valueFirst
+            })
+            $(".domain").html(EzsChangePrice.formatVND(Number(dataset.value))).attr({
+                "data-price": dataset.value,
+                "data-price-old": dataset.value
+            })
             EzsChangePrice.render();
         })
-        $(".input-count").on("keyup", function (e) {
+        $(".input-count").on("keyup", function(e) {
             if (!e.target.value || Number(e.target.value) < 1) return;
             let totalFirst = 0;
             let total = 0;
             totalFirst = 3000000 * Number(e.target.value);
             total = 3000000 * Number(e.target.value);
-            $(".cs-first").html(EzsChangePrice.formatVND(totalFirst)).attr("data-price-frist", totalFirst)
-            $(".cs").html(EzsChangePrice.formatVND(total)).attr("data-price", total)
+            $(".cs-first").html(EzsChangePrice.formatVND(totalFirst)).attr({
+                "data-price-frist": totalFirst,
+                "data-price-year-old": totalFirst
+            })
+            $(".cs").html(EzsChangePrice.formatVND(total)).attr({
+                "data-price": total,
+                "data-price-old": total
+            })
             $(".total-count").html(e.target.value)
             EzsChangePrice.render();
         })
@@ -560,12 +581,16 @@ var EzsChangePrice = {
     render: () => {
         const elPriceFirst = $(".total-price-first");
         const elPrice = $(".total-price");
+        const elPriceYearOld = $(".total-price-year-old");
+        const elPriceOld = $(".total-price-old");
         elPriceFirst.html(EzsChangePrice.formatVND(EzsChangePrice.getTotal("[data-price-frist]", "data-price-frist")))
         elPrice.html(EzsChangePrice.formatVND(EzsChangePrice.getTotal("[data-price]", "data-price")))
+        elPriceYearOld.html(EzsChangePrice.formatVND(EzsChangePrice.getTotal("[data-price-year-old]", "data-price-year-old")))
+        elPriceOld.html(EzsChangePrice.formatVND(EzsChangePrice.getTotal("[data-price-old]", "data-price-old")))
     },
     getTotal: (el, attr) => {
         let total = 0;
-        $(el).each(function () {
+        $(el).each(function() {
             const elmPrice = $(this).attr(attr);
             total += Number(elmPrice)
         });
@@ -617,7 +642,7 @@ var EzsListCustomer = {
 var EzsFC = {
     init: () => {
         EzsFC.changeHref();
-        $(`[data-nav]`).click(function () {
+        $(`[data-nav]`).click(function() {
             const navName = $(this).data('nav');
             EzsFC.changeHref(navName)
         })
@@ -757,24 +782,24 @@ var EzsImageMarker = {
             drag_disabled: true
         });
 
-        data.forEach(function (m) {
+        data.forEach(function(m) {
             $(imageMarker).trigger('add_marker', m);
         })
 
-        $('#add_neg_marker').click(function () {
+        $('#add_neg_marker').click(function() {
             $(imageMarker).trigger('add_marker', {
                 className: 'yello'
             });
         });
-        $('#add_pos_marker').click(function () {
+        $('#add_pos_marker').click(function() {
             $(imageMarker).trigger('add_marker', {
                 title: 'adadad',
                 content: 'Content for mock marker should be a bit longer, longer, longer... ok that`s it.',
                 className: 'green'
             });
         });
-        $('#save').click(function () {
-            $(imageMarker).trigger('get_markers', function (data) {
+        $('#save').click(function() {
+            $(imageMarker).trigger('get_markers', function(data) {
                 console.log(JSON.stringify(data))
             });
         });
@@ -785,7 +810,7 @@ var EzsImageMarker = {
 
         function fn() {
             arrElm.forEach((el, index) => {
-                myTimeout = setTimeout(function () {
+                myTimeout = setTimeout(function() {
                     $(`${elm} [data-toggle='popover']`).popover('hide')
                     $(el).popover('show');
                     if (arrElm.length - 1 === index) {
@@ -809,7 +834,7 @@ const EzsListen = {
         EzsListen.getListen()
     },
     getListen: () => {
-        $.get("https://ezs.vn/wp-json/wp/v2/categories/15", function ({
+        $.get("https://ezs.vn/wp-json/wp/v2/categories/15", function({
             acf
         }) {
             $(".btn-listen").removeClass('d-none')
@@ -838,7 +863,7 @@ const EzsListen = {
                 </ul>
             </div>`)
 
-        $(".controls-video li").click(function () {
+        $(".controls-video li").click(function() {
             $(".controls-video li").removeClass('text-danger');
             $(this).addClass('text-danger');
             const Audio = document.getElementById('audio-listen');

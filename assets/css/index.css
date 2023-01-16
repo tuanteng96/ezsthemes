@@ -1740,6 +1740,7 @@ input[type="number"] {
     text-decoration: line-through;
     line-height: 22px;
     color: #d30038;
+    font-weight: 600;
 }
 
 #price-list .price-list-box .w-flex {
@@ -1788,6 +1789,25 @@ input[type="number"] {
     font-size: 2.6rem;
     line-height: 1.2;
     font-weight: 600;
+}
+
+#price-list .price-list-box .card-price .price-s1 .price-s1-s {
+    text-decoration: line-through;
+    color: #d30038;
+    font-weight: 600;
+}
+
+.bg-primary-2 .price-s1-s {
+    color: #fff !important;
+}
+
+.element-typed {
+    height: 70px;
+    font-weight: 500;
+}
+
+.element-typed~.typed-cursor {
+    display: none !important;
 }
 
 #price-list h3 {
@@ -6477,8 +6497,9 @@ img {
 body.listen-show {
     overflow: hidden;
 }
-.listen-advice {
-}
+
+.listen-advice {}
+
 .listen-advice .bg {
     position: fixed;
     top: 0;
@@ -6565,7 +6586,7 @@ body.listen-show {
     line-height: 48px;
     color: #1d1d1f;
     font-weight: 700;
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .app-slugon .app-slugon-desc {
@@ -6575,7 +6596,6 @@ body.listen-show {
     color: #716c80;
     margin-top: 15px;
 }
-
 
 @keyframes animation-offcanvas-fade-in {
     0% {

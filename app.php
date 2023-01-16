@@ -16,10 +16,10 @@ get_header();
                         <div>APP thương hiệu riêng</div>
                         <div>2 Phiên bản ANDROID & IOS</div>
                     </h1>
-                    <div class="text-white font-weight-light">
+                    <div class="text-white font-weight-light mb-3">
                         Được tải và cài đặt chính thống trên kho ứng dụng miễn phí của <span class="font-weight-bold">APP STORE & CH PLAY</span> hoặc có thể thực hiện quét <span class="font-weight-bold">QR Code</span> tại quầy SPA để cài đặt.
                     </div>
-                    <p></p>
+                    <div class="text-white element-typed"></div>
                     <div class="wpb_wrapper">
                         <a class="custom-btn" href="#">
                             <i class="fab fa-google-play"></i>
@@ -54,12 +54,6 @@ get_header();
     </div>
 
     <div class="bg-light-app app-section-1">
-        <div class="container">
-            <div class="app-slugon">
-                <div class="app-slugon-title">Không cần nhân viên thiết kế, marketing, nội dung - Khách cài đặt App ngay ngày đầu tiên triển khai phần mềm</div>
-                <div class="app-slugon-desc">Bao gồm phiên bản cơ bản để triển khai nhanh mà không cần chờ hình ảnh,nội dung sản phẩm, dịch vụ. Có thể tự chuyển sang bản đầy đủ khi hoàn thiện nội dung.</div>
-            </div>
-        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-12 col-lg-6">
@@ -122,6 +116,7 @@ get_header();
             </div>
         </div>
     </section>
+
     <section id="screenshots" class="screenshots-section app-two">
         <!-- <div class="container">
             <div class="app-title">

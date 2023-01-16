@@ -96,6 +96,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/Image-Marker/jquery.image-marker.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/scalize/scalize.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/lib/typed.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js?10"></script>
 <!-- <script src="<?php echo get_template_directory_uri() ?>/assets/js/blog-detail.js"></script> -->
 <script>
