@@ -11,7 +11,7 @@
 	<!-- FONT ROBOTO -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 	<!-- FONT ICONS -->
 	<link href="<?php echo get_template_directory_uri() ?>/assets/lib/font-awesome-pro/css/all.min.css" rel="stylesheet">
@@ -362,7 +362,7 @@
 							<li>
 								<?php $the_query = new WP_Query('page_id=3197'); ?>
 								<?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
-									<a class="popup-youtube" href="<?php the_field('url_video') ?>"><?php the_title(); ?></a>
+									<a href="<?php echo get_page_link() ?>"><?php the_title(); ?></a>
 								<?php endwhile; ?>
 							</li>
 							<li>
@@ -482,7 +482,7 @@
 		<div class="bg"></div>
 		<div class="close"><i class="fal fa-times"></i></div>
 		<div class="listen-content">
-		</div>				
+		</div>
 	</div>
 
 	<?php wp_reset_postdata() ?>
