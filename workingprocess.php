@@ -69,12 +69,20 @@ get_header();
 
                         </li>
 
-                        <li data-nav="guide">
+                        <!-- <li data-nav="guide">
 
                             <h3 class="text-uppercase title mb-0"><span class="font-number">3.</span> Bàn giao & Hướng
                                 dẫn</h3>
 
                             <span class="text-gray-500 desc">Hướng dẫn sử dụng</span>
+
+                        </li> -->
+
+                        <li data-nav="tientrinh">
+
+                            <h3 class="text-uppercase title mb-0"><span class="font-number">3.</span> Tiến trình triển khai</h3>
+
+                            <span class="text-gray-500 desc">Triển khai & Bàn giao</span>
 
                         </li>
 
@@ -335,23 +343,15 @@ get_header();
 
                                                     <div class="dropdown">
 
-                                                        <a href="javascript:;" type="button" id="dropdownMenuButton"
-                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false">( Xem hợp đồng mẫu )</a>
+                                                        <a href="javascript:;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">( Xem hợp đồng mẫu )</a>
 
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item"
-                                                                href="<?php echo get_template_directory_uri() ?>/HD.pdf"
-                                                                target="_blank">Hợp đồng</a>
+                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item" href="<?php echo get_template_directory_uri() ?>/HD.pdf" target="_blank">Hợp đồng</a>
 
-                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item"
-                                                                href="<?php echo get_template_directory_uri() ?>/PL01.pdf"
-                                                                target="_blank">Phụ lục 1</a>
+                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item" href="<?php echo get_template_directory_uri() ?>/PL01.pdf" target="_blank">Phụ lục 1</a>
 
-                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item"
-                                                                href="<?php echo get_template_directory_uri() ?>/PL2.pdf"
-                                                                target="_blank">Phụ lục 2</a>
+                                                            <a class="dropdown-item font-weight-light text-primary dropdown-item" href="<?php echo get_template_directory_uri() ?>/PL2.pdf" target="_blank">Phụ lục 2</a>
 
                                                         </div>
 
@@ -385,8 +385,7 @@ get_header();
 
                                                 <li>
 
-                                                    Tạm ứng ngay sau khi ký hợp đồng <code
-                                                        class=" fs-14px">50% phí khởi tạo và 100% các khoản phí duy trì</code>
+                                                    Tạm ứng ngay sau khi ký hợp đồng <code class=" fs-14px">50% phí khởi tạo và 100% các khoản phí duy trì</code>
 
                                                 </li>
 
@@ -411,14 +410,12 @@ get_header();
 
                     </div>
 
-                    <div class="fc-tab-content" data-tab="guide">
+                    <!-- <div class="fc-tab-content" data-tab="guide">
 
                         <div class="fc-desc">
 
-                            Bên A sẽ <code class="fs-14px">bàn giao</code> và <code
-                                class="fs-14px">hướng dẫn sử dụng</code> từng bước theo check list bên dưới cho phía Spa
-                            Sẽ thực hiện thao tác từng nghiệp vụ 1 – <code
-                                class="fs-14px">Xong hạng mục nào mới pass qua hạng mục tiếp theo</code> nhằm đảm bảo
+                            Bên A sẽ <code class="fs-14px">bàn giao</code> và <code class="fs-14px">hướng dẫn sử dụng</code> từng bước theo check list bên dưới cho phía Spa
+                            Sẽ thực hiện thao tác từng nghiệp vụ 1 – <code class="fs-14px">Xong hạng mục nào mới pass qua hạng mục tiếp theo</code> nhằm đảm bảo
                             phía nhân viên SPA <code class="fs-14px">thực hiện ĐÚNG và hiểu rõ</code> từng thao tác
                             nghiệp vụ
 
@@ -502,16 +499,14 @@ get_header();
 
                                                 <li>
                                                     <a href="/dat-icon-truy-cap-nhanh-ipad-danh-gia-ra-man-hinh">
-                                                        Đặt icon truy cập nhanh <code
-                                                            class="fs-14px">/ipad/danh-gia</code> ra màn hình</a>
+                                                        Đặt icon truy cập nhanh <code class="fs-14px">/ipad/danh-gia</code> ra màn hình</a>
                                                     </a>
                                                 </li>
 
                                                 <li><a href="/tat-che-do-tu-tat-man-hinh-cua-may-tinh-bang">Tắt chế độ
                                                         tự tắt màn hình của máy tính bảng sau bao giây</a></li>
 
-                                                <li><a href="/cai-dat-tvc-quang-cao">Cài đặt <code
-                                                            class="fs-14px">TVC</code> quảng cáo</a></li>
+                                                <li><a href="/cai-dat-tvc-quang-cao">Cài đặt <code class="fs-14px">TVC</code> quảng cáo</a></li>
 
                                                 <li><a href="/test-quet-ma-qr-code-cho-2-dong-may-android-va-ios">Test
                                                         quét mã QR Code cho 2 dòng máy Android và IOS</a></li>
@@ -546,10 +541,8 @@ get_header();
                                                 <li><a href="/cai-dat-ung-dung-thanh-toan-tu-dong">Cài đặt ứng dụng
                                                         thanh toán tự động</a></li>
 
-                                                <li><a
-                                                        href="/mo-thong-bao-bien-dong-cac-so-tai-khoan-nhan-thanh-toan-vao-sim-moi">Mở
-                                                        thông báo <code
-                                                            class="fs-14px">biến động các số tài khoản</code> nhận thanh
+                                                <li><a href="/mo-thong-bao-bien-dong-cac-so-tai-khoan-nhan-thanh-toan-vao-sim-moi">Mở
+                                                        thông báo <code class="fs-14px">biến động các số tài khoản</code> nhận thanh
                                                         toán vào SIM mới</a></li>
 
                                                 <li><a href="/test-tao-thanh-toan-tu-dong-duyet-thanh-toan-tu-dong">Test
@@ -600,7 +593,6 @@ get_header();
 
                                 </tbody>
 
-                                <!-- ===================== -->
 
                                 <thead>
 
@@ -638,8 +630,7 @@ get_header();
 
                                                 <li>
 
-                                                    <a href="/chinh-sach/">Chính sách</a> <code
-                                                        class="fs-14px">Lương, phụ cấp, ngày công, ngày nghỉ</code>
+                                                    <a href="/chinh-sach/">Chính sách</a> <code class="fs-14px">Lương, phụ cấp, ngày công, ngày nghỉ</code>
 
                                                 </li>
 
@@ -673,8 +664,7 @@ get_header();
                                             <a href="/cau-hinh-luong/">
                                                 Cơ chế thưởng % khi tư vấn thành công
                                             </a>
-                                            <code
-                                                class="fs-14px">Tính trên deal chốt hay số tiền thanh toán của deal chốt đó Cơ chế tính doanh số</code>
+                                            <code class="fs-14px">Tính trên deal chốt hay số tiền thanh toán của deal chốt đó Cơ chế tính doanh số</code>
 
                                         </td>
 
@@ -784,8 +774,7 @@ get_header();
 
                                             </ul>
 
-                                            Lưu ý <code
-                                                class="fs-14px">Setup bảo hành & Phác đồ & Tự động đặt lịch </code>
+                                            Lưu ý <code class="fs-14px">Setup bảo hành & Phác đồ & Tự động đặt lịch </code>
 
                                         </td>
 
@@ -846,11 +835,8 @@ get_header();
                                                 <li>
                                                     <div class="d-flex justify-content-between align-items-center">
 
-                                                        <a href="https://www.youtube.com/watch?v=TwajN9yMcsU"
-                                                            class="popup-youtube">
-                                                            Cấu hình khấu hao cho từng dịch vụ <i
-                                                                style="vertical-align: text-bottom;"
-                                                                class="fas fa-video pl-5px ml-1"></i>
+                                                        <a href="https://www.youtube.com/watch?v=TwajN9yMcsU" class="popup-youtube">
+                                                            Cấu hình khấu hao cho từng dịch vụ <i style="vertical-align: text-bottom;" class="fas fa-video pl-5px ml-1"></i>
                                                         </a>
                                                         <a href="/cau-hinh-khau-hao-cho-tung-dich-vu/">
                                                             <i>(tài liệu)</i>
@@ -879,10 +865,10 @@ get_header();
                                         <td>
                                             <ul>
                                                 <li>
-                                                <a href="/up-danh-sach-khach-hang-cu-bang-file-excel/">    
-                                                Up danh sách khách hàng cũ bằng file excel
-                                                </a>
-                                            </li>
+                                                    <a href="/up-danh-sach-khach-hang-cu-bang-file-excel/">
+                                                        Up danh sách khách hàng cũ bằng file excel
+                                                    </a>
+                                                </li>
                                                 <li>Up danh sách dịch vụ cũ của khách hàng bằng file excel</li>
                                             </ul>
                                         </td>
@@ -1031,8 +1017,6 @@ get_header();
 
                                 </tbody>
 
-                                <!-- ===================== -->
-
                                 <thead>
 
                                     <tr>
@@ -1149,8 +1133,7 @@ get_header();
 
                                             <ul>
 
-                                                <li><a href="/nhap-thu-chi">Nhập thu / chi <code
-                                                            class="fs-14px">không bao gồm bán hàng</code></a></li>
+                                                <li><a href="/nhap-thu-chi">Nhập thu / chi <code class="fs-14px">không bao gồm bán hàng</code></a></li>
 
                                                 <li><a href="/tao-thuong-phat-nhan-vien">Tạo thưởng / phạt</a></li>
 
@@ -1161,8 +1144,7 @@ get_header();
 
                                                 <li><a href="/bang-luong-tra-luong">Bảng lương – Trả lương</a></li>
 
-                                                <li><a href="/tao-thu-chi-noi-bo">Tạo thu / Chi nội bộ <code
-                                                            class="fs-14px">đưa tiền cho Sếp</code></a></li>
+                                                <li><a href="/tao-thu-chi-noi-bo">Tạo thu / Chi nội bộ <code class="fs-14px">đưa tiền cho Sếp</code></a></li>
 
                                             </ul>
 
@@ -1256,8 +1238,7 @@ get_header();
                                                     </a>
                                                 </li>
 
-                                                <li><a href="/dat-lich-cho-khach-hang">Đặt lịch cho khách hàng <code
-                                                            class="fs-14px">khi khách gọi điện hoặc liên hệ trực tiếp qua kênh</code></a>
+                                                <li><a href="/dat-lich-cho-khach-hang">Đặt lịch cho khách hàng <code class="fs-14px">khi khách gọi điện hoặc liên hệ trực tiếp qua kênh</code></a>
                                                 </li>
 
                                                 <li>
@@ -1467,8 +1448,6 @@ get_header();
 
                                 </tbody>
 
-                                <!-- ===================== -->
-
                                 <thead>
 
                                     <tr>
@@ -1502,8 +1481,7 @@ get_header();
 
                                             <div>Hình ảnh dịch vụ <code class="fs-14px">600x600</code></div>
 
-                                            <div>Các Option lựa chọn ( 1 buổi, 3 buổi ) <code
-                                                    class="fs-14px">600x600</code></div>
+                                            <div>Các Option lựa chọn ( 1 buổi, 3 buổi ) <code class="fs-14px">600x600</code></div>
 
                                         </td>
 
@@ -1527,8 +1505,7 @@ get_header();
 
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <code class="my-2 d-inline-block fs-14px">1. Nội dung</code>
-                                                <a href="https://www.youtube.com/watch?v=Rc35gt1NfhM"
-                                                    class="popup-youtube">
+                                                <a href="https://www.youtube.com/watch?v=Rc35gt1NfhM" class="popup-youtube">
                                                     <code class="cursor-pointer">Xem Video</code>
                                                 </a>
                                             </div>
@@ -1543,8 +1520,7 @@ get_header();
 
                                                         <li>
                                                             <a href="/3-banner-top">
-                                                                3 Banner Top <code
-                                                                    class="fs-14px">600 x chiều dài tùy ý</code> (
+                                                                3 Banner Top <code class="fs-14px">600 x chiều dài tùy ý</code> (
                                                                 chương trình ưu đãi, dịch vụ hot & sự kiện quan trọng )
                                                             </a>
                                                         </li>
@@ -1557,8 +1533,7 @@ get_header();
 
                                                         <li>
                                                             <a href="/banner-main-1-hoac-nhieu-banner">
-                                                                Banner Main 1 hoặc nhiều Banner <code
-                                                                    class="fs-14px">600 x dài tùy ý</code>
+                                                                Banner Main 1 hoặc nhiều Banner <code class="fs-14px">600 x dài tùy ý</code>
                                                             </a>
                                                         </li>
 
@@ -1598,10 +1573,8 @@ get_header();
 
                                             </ul>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <code
-                                                    class="my-2 d-inline-block fs-14px">2. Mô tả cơ chế hoạt động khi khách chưa đăng nhập</code>
-                                                <a href="https://www.youtube.com/watch?v=W1l_XYNMvDk"
-                                                    class="popup-youtube">
+                                                <code class="my-2 d-inline-block fs-14px">2. Mô tả cơ chế hoạt động khi khách chưa đăng nhập</code>
+                                                <a href="https://www.youtube.com/watch?v=W1l_XYNMvDk" class="popup-youtube">
                                                     <code class="cursor-pointer">Xem Video</code>
                                                 </a>
                                             </div>
@@ -1627,15 +1600,13 @@ get_header();
 
                                             </ul>
 
-                                            <code
-                                                class="my-2 d-inline-block fs-14px">3. Mô tả cơ chế hoạt động khi khách đăng nhập</code>
+                                            <code class="my-2 d-inline-block fs-14px">3. Mô tả cơ chế hoạt động khi khách đăng nhập</code>
 
                                             <ul>
 
                                                 <li>
                                                     <a href="/dang-nhap-bang-tai-khoan">
-                                                        Đăng nhập bằng tài khoản <code
-                                                            class="fs-14px">Điện thoại & Mật khẩu</code>
+                                                        Đăng nhập bằng tài khoản <code class="fs-14px">Điện thoại & Mật khẩu</code>
                                                     </a>
                                                 </li>
 
@@ -1687,6 +1658,320 @@ get_header();
 
                         </div>
 
+                    </div> -->
+
+                    <div class="fc-tab-content" data-tab="tientrinh">
+
+                        <div class="fc-content">
+
+                            <table class="table table-striped table-borderless">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th class="fs-4 fw-bold text-dark ps-6 py-6" colspan="2">
+
+                                            SETUP Ban đầu
+
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Thời gian</code>
+
+                                        </td>
+
+                                        <td>
+                                            3 ngày theo quy định về thời gian duyệt <code>APP</code> của <code>APPSTORE & CHPLAY</code>
+                                            <ul>
+
+                                                <li>
+                                                    Kích hoạt phần mềm & xây dựng Website & Duyệt ứng dụng trên <code>APPSTORE, CHPLAY</code>
+                                                </li>
+                                                <li>
+                                                    Chuẩn bị <code>các thiết bị phần cứng</code> ( máy in, máy tính, … )
+                                                </li>
+                                                <li>
+                                                    Chuẩn bị bảng giá Sản phẩm & Dịch vụ, Danh sách nhân viên, Danh sách khách hàng cũ.
+                                                </li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="w-140px">
+
+                                            <!-- <a href="https://www.youtube.com/watch?v=QttHrEh1xSg" class="popup-youtube">
+
+                                                <code class="cursor-pointer">Xem Video</code>
+
+                                            </a> -->
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- ===================== -->
+
+                                <thead>
+
+                                    <tr class="border-top-tb">
+
+                                        <th class="fs-4 fw-bold text-dark ps-6 py-6" colspan="2">
+
+                                            Hướng dẫn
+
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Thời gian</code>
+
+                                        </td>
+
+                                        <td>
+                                            <code>1 Ngày</code>
+
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=tF4yubUm-cU" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Nghiệp vụ cơ bản có thể bắt đầu sử dụng phần mềm</code>
+
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    Thao tác nghiệp vụ <code>nhập liệu</code> hàng ngày của bộ phận lễ tân
+                                                </li>
+                                                <li>
+                                                    Sử dụng APP xem <code>thống kê</code> các ca dịch vụ, lương tour, hoa hồng và bảng lương của nhân viên
+                                                </li>
+                                                <li>
+                                                    Xem <code>báo cáo</code> tổng kết
+                                                </li>
+                                                <li>
+                                                    Cách dùng App với vai trò <code>khách hàng của SPA</code>
+                                                </li>
+                                            </ul>
+
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=bMdwLXFH9jU" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>
+                                            <code>Nghiệp vụ khác</code>
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    Trang hướng dẫn, cách tìm kiếm
+                                                </li>
+                                                <li>
+                                                    Hướng dẫn trực tiếp qua <code>ZOOM</code> khi phía Spa có yêu cầu
+                                                </li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="w-140px">
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- ===================== -->
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th class="fs-4 fw-bold text-dark ps-6 py-6" colspan="2">
+
+                                            Sử dụng chính thức
+
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Thời gian</code>
+
+                                        </td>
+                                        <td>
+                                            <code>3 Ngày</code>
+
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=umDN9-vBfmo" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Hỗ trợ Spa vận hành</code>
+
+                                        </td>
+
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    Trong 3 ngày này bên SPA sẽ <code>vận hành phần mềm</code> với sự hỗ trợ từ <code>EZS</code> ( có nhân viên hỗ trợ liên tục trong quá trình nhập liệu, Cuối ngày nhân viên sẽ hướng dẫn quản lý xem báo cáo )
+                                                </li>
+                                                <li>
+                                                    Hệ thống cung cấp phiên bản <code>APP Basic</code> giúp SPA có thể cho khách hàng của mình cài đặt và sử dụng APP ngay từ ngày đầu tiên mà chưa cần cập nhật đầy đủ thông tin và hình ảnh của các sản phẩm & Dịch vụ trên APP
+                                                </li>
+                                                <li>Sau này có thể kích hoạt bản <code>APP Full khi</code> hoàn thiện nội dung.</li>
+                                            </ul>
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=q_6bCTA4y54" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- ===================== -->
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th class="fs-4 fw-bold text-dark ps-6 py-6" colspan="2">
+
+                                            Bàn giao CHECK LIST
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>CHECK LIST</code>
+
+                                        </td>
+
+                                        <td>
+
+                                            CHECK LIST này tùy vào phía SPA có đội ngũ tiếp nhận để triển khai nhanh hay từng bước. Bên <code>EZS</code> sẽ support khi có yêu cầu từ SPA.
+
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=dPKeIIWoiW0" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <code>Cung cấp bản CHECK LIST các công việc mà SPA nên triển khai để hoàn thiện</code>
+
+                                        </td>
+
+                                        <td colspan="2">
+
+                                            <ul>
+
+                                                <li>
+                                                    Nội dung <code>Website / App</code>
+                                                </li>
+                                                <li>
+                                                    <code>Quản trị chuyên sâu</code> về hệ thống
+                                                </li>
+                                                <li>
+                                                    Khai thác các chức năng <code>tự động hóa</code> của hệ thống
+                                                </li>
+
+                                            </ul>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th class="fs-4 fw-bold text-dark ps-6 py-6" colspan="2">
+
+                                            Kết thúc bàn giao
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+                            </table>
+
+                        </div>
+
                     </div>
 
                     <div class="fc-tab-content" data-tab="support">
@@ -1725,8 +2010,7 @@ get_header();
 
                                                 <li>
 
-                                                    Tạo nhóm riêng cho SPA & các nhân viên EZS để <code
-                                                        class="fs-14px">trao đổi Support</code>
+                                                    Tạo nhóm riêng cho SPA & các nhân viên EZS để <code class="fs-14px">trao đổi Support</code>
 
                                                 </li>
 
@@ -1765,17 +2049,14 @@ get_header();
                                                 <li>
 
                                                     Tất cả các lỗi phát sinh trong quá trình sử dụng được bên Spa thông
-                                                    báo sẽ được khắc phục ngay lập tức <code
-                                                        class="fs-14px">trong vòng 4 giờ</code>
+                                                    báo sẽ được khắc phục ngay lập tức <code class="fs-14px">trong vòng 4 giờ</code>
 
                                                 </li>
 
                                                 <li>
 
-                                                    Những vấn đề đến từ bên thứ 3 ( <code
-                                                        class="fs-14px">Tên miền, Trung tâm dữ liệu và Apple, CHPLAY …</code>
-                                                    ) sẽ được xử lý theo quy trình do bên thứ 3 quy định <code
-                                                        class="fs-14px">Một số trường hợp có thể phát sinh chi phí</code>
+                                                    Những vấn đề đến từ bên thứ 3 ( <code class="fs-14px">Tên miền, Trung tâm dữ liệu và Apple, CHPLAY …</code>
+                                                    ) sẽ được xử lý theo quy trình do bên thứ 3 quy định <code class="fs-14px">Một số trường hợp có thể phát sinh chi phí</code>
 
                                                 </li>
 

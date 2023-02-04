@@ -113,7 +113,9 @@
 										<li><a href="<?php echo get_page_link() ?>?tab=demo">Tư vấn - Demo</a></li>
 										<li><a href="<?php echo get_page_link() ?>?tab=pay">Ký hợp đồng - Thanh toán</a>
 										</li>
-										<li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+										<!-- <li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+										</li> -->
+										<li><a href="<?php echo get_page_link() ?>?tab=tientrinh">Tiến trình triển khai</a>
 										</li>
 										<li><a href="<?php echo get_page_link() ?>?tab=support">Bảo hành - Hỗ trợ - Nâng cấp</a>
 										</li>
@@ -242,7 +244,9 @@
 										<li><a href="<?php echo get_page_link() ?>?tab=demo">Tư vấn - Demo</a></li>
 										<li><a href="<?php echo get_page_link() ?>?tab=pay">Ký hợp đồng - Thanh toán</a>
 										</li>
-										<li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+										<!-- <li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+										</li> -->
+										<li><a href="<?php echo get_page_link() ?>?tab=tientrinh">Tiến trình triển khai</a>
 										</li>
 										<li><a href="<?php echo get_page_link() ?>?tab=support">Bảo hành - Hỗ trợ - Nâng cấp</a>
 										</li>
@@ -406,7 +410,9 @@
 								<li><a href="<?php echo get_page_link() ?>?tab=demo">Tư vấn - Demo</a></li>
 								<li><a href="<?php echo get_page_link() ?>?tab=pay">Ký hợp đồng - Thanh toán</a>
 								</li>
-								<li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+								<!-- <li><a href="<?php echo get_page_link() ?>?tab=guide">Bàn giao - Hướng dẫn sử dụng</a>
+								</li> -->
+								<li><a href="<?php echo get_page_link() ?>?tab=tientrinh">Tiến trình triển khai</a>
 								</li>
 								<li><a href="<?php echo get_page_link() ?>?tab=support">Bảo hành - Hỗ trợ - Nâng cấp</a>
 								</li>
