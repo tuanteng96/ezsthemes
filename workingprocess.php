@@ -1913,27 +1913,13 @@ get_header();
 
                                         <td>
 
-                                            CHECK LIST này tùy vào phía SPA có đội ngũ tiếp nhận để triển khai nhanh hay từng bước. Bên <code>EZS</code> sẽ support khi có yêu cầu từ SPA.
+                                            <div>
+                                                CHECK LIST này tùy vào phía SPA có đội ngũ tiếp nhận để triển khai nhanh hay từng bước. Bên <code>EZS</code> sẽ support khi có yêu cầu từ SPA.
+                                            </div>
 
-                                        </td>
-
-                                        <td class="w-140px">
-                                            <!-- <a href="https://www.youtube.com/watch?v=dPKeIIWoiW0" class="popup-youtube">
-                                                <code class="cursor-pointer">Xem Video</code>
-                                            </a> -->
-                                        </td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td>
-
-                                            <code>Cung cấp bản CHECK LIST các công việc mà SPA nên triển khai để hoàn thiện</code>
-
-                                        </td>
-
-                                        <td colspan="2">
+                                            <div class="my-3">
+                                                <code>Cung cấp bản CHECK LIST các công việc mà SPA nên triển khai để hoàn thiện</code>
+                                            </div>
 
                                             <ul>
 
@@ -1949,6 +1935,12 @@ get_header();
 
                                             </ul>
 
+                                        </td>
+
+                                        <td class="w-140px">
+                                            <!-- <a href="https://www.youtube.com/watch?v=dPKeIIWoiW0" class="popup-youtube">
+                                                <code class="cursor-pointer">Xem Video</code>
+                                            </a> -->
                                         </td>
 
                                     </tr>
