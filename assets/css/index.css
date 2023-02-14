@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300;400;500;600;700&display=swap');
 html,
 body {
     height: 100%;
@@ -16,6 +17,64 @@ body {
 
 body a:hover {
     text-decoration: none;
+}
+
+.notification-sliders {
+    margin-top: -1px;
+    font-family: 'Niramit', sans-serif;
+    font-size: 16px;
+    letter-spacing: .3px;
+    font-weight: 600;
+}
+
+.notification-sliders .slick-vertical .slick-slide {
+    border: 0;
+}
+
+.notification-sliders .notification-slider__item {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.notification-sliders .notification-slider__item.bg-1 {
+    background: #009ef7;
+}
+
+.notification-sliders .notification-slider__item.bg-2 {
+    background: #1BC5BD;
+}
+
+.notification-sliders .notification-slider__item a,
+.notification-sliders .notification-slider__item b {
+    color: #fff;
+    font-weight: 700;
+}
+
+header .header-mobi {
+    transition: top 200ms ease;
+}
+
+@media (max-width: 993px) {
+    .body-notification .header-mobi {
+        height: 105.69px;
+    }
+    .body-notification .header-mobi .header-mobi-detail {
+        padding-top: 45.69px;
+    }
+    .body-notification .header-mobi .notification-sliders {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .notification-sliders .notification-slider__item {
+        font-size: 13px;
+    }
 }
 
 .text-justify {
@@ -4034,6 +4093,25 @@ header ul.header-top__menu-sub li a::before {
     align-items: center;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
+}
+
+.body-notification .header-fixed {
+    padding-top: 45.89px;
+    height: calc(70px + 45.89px);
+    top: -115.89px;
+}
+
+.body-notification .header-fixed .notification-sliders {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 993px) {
+    .body-notification>.notification-sliders {
+        display: none;
+    }
 }
 
 .header-fixed.show {

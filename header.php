@@ -49,8 +49,17 @@
 
 </head>
 
-<body <?php body_class() ?>>
-
+<body class="body-notification" <?php body_class() ?>>
+	<div class="notification-sliders">
+		<div class="notification-slider">
+			<div class="notification-slider__item bg-1">
+				Sử dụng phần mềm quản lý chỉ <b>3.000.000</b> / năm ! <a href="http://m.me/phanmemezs/">Mua ngay!</a>
+			</div>
+			<div class="notification-slider__item bg-2">
+				Sở hữu APP thương hiệu riêng chỉ <b>5.990.000</b> ! <a href="http://m.me/phanmemezs/">Đăng ký!</a>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="header-top">
 			<div class="header-top__logo">
@@ -183,6 +192,16 @@
 			</div>
 		</div>
 		<div class="header-fixed">
+			<div class="notification-sliders">
+				<div class="notification-slider">
+					<div class="notification-slider__item bg-1">
+						Sử dụng phần mềm quản lý chỉ <b>3.000.000</b> / năm ! <a href="http://m.me/phanmemezs/">Mua ngay!</a>
+					</div>
+					<div class="notification-slider__item bg-2">
+						Sở hữu APP thương hiệu riêng chỉ <b>5.990.000</b> ! <a href="http://m.me/phanmemezs/">Đăng ký!</a>
+					</div>
+				</div>
+			</div>
 			<div class="header-fixed__logo">
 				<a href="<?php echo home_url(); ?>">
 					<img width="74" height="25" src="<?php echo get_template_directory_uri() ?>/assets/img/logo-mau.png" class="qodef-header-logo-image qodef--light" alt="logo light" itemprop="image">
@@ -315,6 +334,16 @@
 			</div>
 		</div>
 		<div class="header-mobi">
+			<div class="notification-sliders">
+				<div class="notification-slider">
+					<div class="notification-slider__item bg-1">
+						Sử dụng phần mềm quản lý chỉ <b>3.000.000</b> / năm ! <a href="http://m.me/phanmemezs/">Mua ngay!</a>
+					</div>
+					<div class="notification-slider__item bg-2">
+						Sở hữu APP thương hiệu riêng chỉ <b>5.990.000</b> ! <a href="http://m.me/phanmemezs/">Đăng ký!</a>
+					</div>
+				</div>
+			</div>
 			<div class="header-mobi-detail">
 				<div id="phone-call">
 					<i class="fas fa-phone-alt txt-white"></i>

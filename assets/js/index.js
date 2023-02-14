@@ -7,6 +7,15 @@ $(document).ready(function() {
     EzsImageMarker.init()
     EzsListen.init()
 
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $(".header-mobi").addClass("header-noti");
+        } else {
+            $(".header-mobi").removeClass("header-noti");
+        }
+    });
+
     var options = {
         strings: ['Vận hành APP ngay khi Spa không có <i> nhân viên phụ trách hình ảnh, nội dung.</i>'],
         typeSpeed: 30,
@@ -15,6 +24,17 @@ $(document).ready(function() {
     if ($('.element-typed').length > 0) {
         var typed = new Typed('.element-typed', options);
     }
+
+    $('.notification-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        vertical: true,
+        variableWidth: false,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+    });
 
     $(".btn-listen").click(function() {
         const Audio = document.getElementById('audio-listen');
