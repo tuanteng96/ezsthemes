@@ -1,11 +1,25 @@
 var myTimeout = null
 $(document).ready(function() {
     // Price Change ====================
-    EzsChangePrice.init()
+    // EzsChangePrice.init()
     EzsFC.init()
     EzsListCustomer.init()
     EzsImageMarker.init()
     EzsListen.init()
+    EzsPrice.init()
+
+    $('.tip-pro a').click(function() {
+        const el = $("#price-list");
+        if (el.hasClass('d-none')) {
+            el.removeClass('d-none')
+            $('html,body').animate({
+                    scrollTop: $("#price-list").offset().top - 120
+                },
+                'slow');
+        } else {
+            el.addClass('d-none')
+        }
+    })
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
@@ -560,6 +574,61 @@ $(document).ready(function() {
         n(".main-head .main-head__img-before", 800),
         n(".main-head .main-head__img-after", 1e3);
 });
+
+var EzsPrice = {
+    init: () => {
+        $(".select-pm-cs .dropdown-item, .select-pm-year .dropdown-item").click(function() {
+            EzsPrice.onChangePM($(this))
+        });
+        $(".select-app-year .dropdown-item").click(function() {
+            EzsPrice.onChangeAPP($(this))
+        });
+    },
+    onChangePM: (_this) => {
+        const elDropdown = _this.parents('.dropdown')
+        const type = elDropdown.attr('data-type')
+        elDropdown.find('.dropdown-item').removeClass('active')
+        _this.addClass('active')
+        const val = _this.attr('data-value')
+        const valText = _this.text()
+        elDropdown.find('.current-select').attr('data-cs', val).html(valText)
+        elDropdown.parents('.module-ezs').find(type === 'cs' ? '.val-cs-pmg' : '.val-year-pmg').text(val)
+        EzsPrice.getTotalPM()
+    },
+    onChangeAPP: _this => {
+        const elDropdown = _this.parents('.dropdown')
+        elDropdown.find('.dropdown-item').removeClass('active')
+        _this.addClass('active')
+        const val = _this.attr('data-value')
+        const valPrice = Number(_this.attr('data-price'))
+        const valText = _this.text()
+        elDropdown.find('.current-select').attr({
+            'data-cs': val,
+            'data-price': valPrice
+        }).html(valText)
+        elDropdown.parents('.module-ezs').find('.val-year-app').text(val)
+        $('.total-app').attr('data-totalapp', valPrice).html(`${EzsPrice.formatVND(valPrice)}₫`)
+        EzsPrice.getTotalBasic()
+    },
+    getTotalPM: () => {
+        const currentCS = Number($('.current-pm-cs').attr('data-cs'))
+        const currentYear = Number($('.current-pm-year').attr('data-cs'))
+        const total = currentCS * currentYear * (currentCS > 1 ? 3000000 : 3500000)
+        $('.total-pm').attr('data-totalcs', total).html(`${EzsPrice.formatVND(total)}₫`)
+        EzsPrice.getTotalBasic()
+    },
+    getTotalBasic: () => {
+        const total = Number($('.total-pm').attr('data-totalcs')) + Number($('.total-app').attr('data-totalapp'))
+        $(".total-basic").html(`${EzsPrice.formatVND(total)}₫`)
+    },
+    formatVND: price => {
+        if (!price || price === 0) {
+            return '0'
+        } else {
+            return price.toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1.')
+        }
+    },
+}
 
 var EzsChangePrice = {
     init: () => {
