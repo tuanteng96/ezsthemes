@@ -583,6 +583,11 @@ var EzsPrice = {
         $(".select-app-year .dropdown-item").click(function() {
             EzsPrice.onChangeAPP($(this))
         });
+
+        $(".el-click").click(function() {
+            $(this).removeClass('show');
+            $('.select-app-year .dropdown-item:nth-child(2)').trigger('click')
+        })
     },
     onChangePM: (_this) => {
         const elDropdown = _this.parents('.dropdown')
@@ -608,12 +613,26 @@ var EzsPrice = {
         }).html(valText)
         elDropdown.parents('.module-ezs').find('.val-year-app').text(val)
         $('.total-app').attr('data-totalapp', valPrice).html(`${EzsPrice.formatVND(valPrice)}₫`)
+        if (valPrice > 0) {
+            $('.total-app').removeClass('text-danger').next().removeClass('d-none')
+            $(".el-click").removeClass('show')
+        } else {
+            $('.total-app').addClass('text-danger').text('Không sử dụng').next().addClass('d-none')
+            $(".el-click").addClass('show')
+        }
         EzsPrice.getTotalBasic()
     },
     getTotalPM: () => {
         const currentCS = Number($('.current-pm-cs').attr('data-cs'))
         const currentYear = Number($('.current-pm-year').attr('data-cs'))
-        const total = currentCS * currentYear * (currentCS > 1 ? 3000000 : 3500000)
+        let total = currentCS * 3500000
+        if (currentYear > 1) {
+            total = currentCS * currentYear * 3000000
+            $('.user-total').text('5')
+        } else {
+            total = currentYear * currentCS * 3500000
+            $('.user-total').text('3')
+        }
         $('.total-pm').attr('data-totalcs', total).html(`${EzsPrice.formatVND(total)}₫`)
         EzsPrice.getTotalBasic()
     },

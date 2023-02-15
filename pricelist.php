@@ -23,12 +23,12 @@ get_header();
             <div class="bg-white price-list2">
                 <div class="price-list2-title">
                     <h4>Gói EZS BASIC</h4>
-                    <div class="font-number price-list2-price total-basic">13.200.000₫</div>
+                    <div class="font-number price-list2-price total-basic">3.500.000₫</div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-6 mb-4 mb-lg-0">
                         <div class="module-ezs">
-                            <h5>Phần mềm quản lý</h5>
+                            <h5>1. Phần mềm quản lý</h5>
                             <div class="price">
                                 <span class="font-number total-pm" data-totalcs="3500000">3.500.000₫</span>
                                 <span>/ <b class="val-cs-pmg">1</b> cơ sở / <b class="val-year-pmg">1</b> năm</span>
@@ -42,7 +42,7 @@ get_header();
                             </div>
                             <div class="list-module">
                                 <div class="module-item">
-                                    <div class="module-title">Không giới hạn nhân viên</div>
+                                    <div class="module-title">Giới hạn truy cập <b class="user-total">3</b> tài khoản / 1 cơ sở</div>
                                     <div class="module-icon">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor"></rect>
@@ -91,9 +91,6 @@ get_header();
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item active" data-value="1" href="javascript:;">1 Năm</a>
                                         <a class="dropdown-item" data-value="2" href="javascript:;">2 Năm</a>
-                                        <a class="dropdown-item" data-value="3" href="javascript:;">3 Năm</a>
-                                        <a class="dropdown-item" data-value="4" href="javascript:;">4 Năm</a>
-                                        <a class="dropdown-item" data-value="5" href="javascript:;">5 Năm</a>
                                     </div>
                                 </div>
                             </div>
@@ -101,10 +98,10 @@ get_header();
                     </div>
                     <div class="col-md-12 col-lg-6">
                         <div class="module-ezs">
-                            <h5>APP thương hiệu riêng</h5>
+                            <h5>2. APP thương hiệu riêng</h5>
                             <div class="price">
-                                <span class="font-number total-app" data-totalapp="5990000">5.990.000₫</span>
-                                <span>/ <b class="val-year-app">1</b> năm</span>
+                                <span class="font-number total-app text-danger" data-totalapp="0">Không sử dụng</span>
+                                <span class="d-none">/ <b class="val-year-app">1</b> năm</span>
                             </div>
                             <div class="sale">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
@@ -145,17 +142,25 @@ get_header();
                             <div class="d-flex justify-content-center list-choose">
                                 <div class="dropdown select-app-year">
                                     <span class="cursor-pointer btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="current-select current-app-year" data-cs="1" data-price="5990000">1 năm</span>
+                                        <span class="current-select current-app-year" data-cs="1" data-price="0">Không sử dụng</span>
                                         <i class="far fa-angle-down vertical-text-bottom"></i>
                                     </span>
                                     <div class="dropdown-menu dropup" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item active" data-value="1" data-price="5990000" href="javascript:;">1 Năm</a>
+                                        <a class="dropdown-item active" data-value="0" data-price="0" href="javascript:;">Không sử dụng</a>
+                                        <a class="dropdown-item" data-value="1" data-price="5990000" href="javascript:;">1 Năm</a>
                                         <a class="dropdown-item" data-value="2" data-price="7190000" href="javascript:;">2 Năm</a>
-                                        <a class="dropdown-item" data-value="3" data-price="13190000" href="javascript:;">3 Năm</a>
-                                        <a class="dropdown-item" data-value="4" data-price="14380000" href="javascript:;">4 Năm</a>
                                     </div>
                                 </div>
                             </div>
+                            <!-- <div class="el-click show">
+                                <button type="button" class="btn btn-primary">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M10 18C9.7 18 9.5 17.9 9.3 17.7L2.3 10.7C1.9 10.3 1.9 9.7 2.3 9.3C2.7 8.9 3.29999 8.9 3.69999 9.3L10.7 16.3C11.1 16.7 11.1 17.3 10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="currentColor"></path>
+                                        <path d="M10 18C9.7 18 9.5 17.9 9.3 17.7C8.9 17.3 8.9 16.7 9.3 16.3L20.3 5.3C20.7 4.9 21.3 4.9 21.7 5.3C22.1 5.7 22.1 6.30002 21.7 6.70002L10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="currentColor"></path>
+                                    </svg>
+                                    Sử dụng APP
+                                </button>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -213,7 +218,7 @@ get_header();
                             </div>
                             <div class="price-head-item w-year">
                                 <div class="price-d font-number">
-                                    3.500.000₫ <span>/ 1 - 2 cở sở</span>
+                                    12.000.000₫ <span>/ 1 - 2 cở sở</span>
                                 </div>
                                 <div class="price-d font-number">
                                     <span>Từ 3 cơ sở</span> + 6.000.000₫
