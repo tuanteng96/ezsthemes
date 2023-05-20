@@ -5291,6 +5291,49 @@ body:not(.home) .header-fixed__logo {
     transition: ease-in-out 0.4s;
 }
 
+.main-head__view-more2 {
+    width: 204px;
+    font-size: 15px;
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+    line-height: 30px;
+    background: #1bc5bd;
+    color: #fff;
+    animation: btnvideo 0.5s infinite alternate;
+    -webkit-animation: btnvideo 0.5s infinite alternate;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.main-head__view-more2:hover {
+    color: #fff;
+    background: #0d9b94;
+}
+
+@keyframes btnvideo {
+    0% {
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -ms-transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+    }
+}
+
 .main-head__view-more:hover {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
