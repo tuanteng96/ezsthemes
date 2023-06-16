@@ -87,6 +87,8 @@
     <div class="shadow-behind">
     </div>
 </div>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/lib/email.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/lib/slick/slick/slick.js"></script>
 <!-- Owl Carousel 2 core js -->
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/popper/popper.min.js"></script>
@@ -97,6 +99,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/Image-Marker/jquery.image-marker.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/scalize/scalize.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/typed.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/lib/toastr.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/index.js?10"></script>
 <!-- <script src="<?php echo get_template_directory_uri() ?>/assets/js/blog-detail.js"></script> -->
 <script>

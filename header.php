@@ -41,6 +41,8 @@
 	<!-- INDEX CSS -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/index.css?8">
 
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/highlights.css?5">
+
 	<!-- css,js,jq -->
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/lib/jq/jquery-3.6.0.js"></script>
 	<script src="<?php echo get_template_directory_uri() ?>/assets/lib/dragui/jquery-ui.js"></script>

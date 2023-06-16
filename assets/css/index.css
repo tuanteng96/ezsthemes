@@ -19,6 +19,60 @@ body a:hover {
     text-decoration: none;
 }
 
+#reg-advise .modal-dialog {
+    max-width: 450px;
+}
+
+#reg-advise .modal-content {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+#reg-advise .modal-content .modal-title {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#reg-advise .modal-content .form-group label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #3F4254;
+    line-height: 15px;
+    margin-bottom: 8px;
+    font-family: 'Niramit', sans-serif;
+}
+
+#reg-advise .modal-content .form-group input {
+    border: 1px solid #E4E6EF;
+    border-radius: 0.25rem;
+    font-family: 'Niramit', sans-serif;
+    box-shadow: none;
+    padding: 0.625rem 0.825rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#reg-advise .modal-content .form-group input:focus {
+    border-color: #69b3ff;
+}
+
+#reg-advise .modal-footer button {
+    font-family: 'Niramit', sans-serif;
+    padding: 0.625rem 0.825rem;
+}
+
+#reg-advise .modal-footer button.btn-primary {
+    background-color: #3699FF;
+    border-color: #3699FF;
+}
+
+#reg-advise .modal-footer button.btn-primary:hover {
+    background-color: #187DE4;
+    border-color: #187DE4;
+}
+
 .notification-sliders {
     margin-top: -1px;
     font-family: 'Niramit', sans-serif;
@@ -5276,7 +5330,7 @@ body:not(.home) .header-fixed__logo {
     -ms-flex-align: center;
     align-items: center;
     padding: 10px 0;
-    background: #1d1d1f;
+    background: #187DE4;
     color: #fff;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -5289,6 +5343,7 @@ body:not(.home) .header-fixed__logo {
     opacity: 0;
     -webkit-transition: ease-in-out 0.4s;
     transition: ease-in-out 0.4s;
+    border-radius: 25px;
 }
 
 .main-head__view-more2 {
@@ -5314,6 +5369,7 @@ body:not(.home) .header-fixed__logo {
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 .main-head__view-more2:hover {

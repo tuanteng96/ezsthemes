@@ -17,7 +17,8 @@ get_header();
                     <p class="text-white">Tích hợp App (Ứng dụng điện thoại) & Website giới thiệu thương hiệu riêng giúp quản lý hiệu quả - tăng doanh thu & tìm kiếm khách hàng mới</p>
                     <div class="d-flex pt-2">
                         <div class="main-head__view-more btn-listen d-none mr-3">Nghe tư vấn Online</div>
-                        <div class="main-head__view-more2">Đăng ký tư vấn</div>
+                        <div class="main-head__view-more2" data-toggle="modal" data-target="#reg-advise">Đăng ký tư vấn</div>
+
                     </div>
                 </div>
                 <div class="col-2 col-md-2">
@@ -616,5 +617,40 @@ get_header();
 <div class="footer-pattern-hidden bg-home">
     <img src="<?php echo get_template_directory_uri() ?>/assets/img/pattern-5.png" alt="Phần mềm quản lý SPA - EZS.VN">
 </div>
+<div class="modal fade" id="reg-advise" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Đăng ký trải nghiệm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Họ tên</label>
+                    <input type="text" name="name" class="form-control" placeholder="Nhập họ tên" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input type="number" name="phone" class="form-control" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input type="text" name="address" class="form-control" placeholder="Nhập địa chỉ">
+                </div>
+                <div class="form-group mb-0">
+                    <label>Tên thương hiệu</label>
+                    <input type="text" name="brand" class="form-control" placeholder="Nhập tên thương hiệu của bạn">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-regadvise">Đăng ký ngay !</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer();

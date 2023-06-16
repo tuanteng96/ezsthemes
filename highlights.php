@@ -7,9 +7,6 @@ Template Name: Điểm nổi bật
 get_header();
 ?>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/highlights.css?5">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/toastr.min.css">
-<script src="<?php echo get_template_directory_uri() ?>/assets/lib/toastr.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/react.production.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/react-dom.production.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/lib/babel.min.js"></script>

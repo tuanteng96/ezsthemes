@@ -8,6 +8,41 @@ $(document).ready(function() {
     EzsListen.init()
     EzsPrice.init()
 
+    $(".btn-regadvise").click(function() {
+        let elForm = $(this).parents('#reg-advise')
+        let name = elForm.find('input[name="name"]')
+        let phone = elForm.find('input[name="phone"]')
+        let address = elForm.find('input[name="address"]')
+        let brand = elForm.find('input[name="brand"]')
+        if (!name.val()) {
+            name.focus()
+            return;
+        }
+        if (!phone.val()) {
+            phone.focus()
+            return;
+        }
+        let templateParams = {
+            from_name: name.val(),
+            message: `Số điện thoại : ${phone.val()} - Địa chỉ : ${address.val() || 'Chưa xác định'} - Thương hiệu : ${brand.val() || "Chưa xác định"}`
+        }
+        $(this).prop("disabled", true);
+        $(this).html(
+            `Đang thực hiện ...`
+        );
+
+        emailjs.send("service_b2m9qlf", "template_ctuitar", templateParams, "q6puDBkyNoYO6MuYy").then(function(response) {
+
+            toastr.success('Gửi đăng ký tư vấn thành công !', { timeOut: 1500 })
+            $(".btn-regadvise").prop("disabled", false);
+            $(".btn-regadvise").html("Đăng ký ngay !");
+
+            $("#reg-advise").modal('hide')
+        }, function(error) {
+            console.log(error);
+        });
+    })
+
     $('.tip-pro a').click(function() {
         const el = $("#price-list");
         if (el.hasClass('d-none')) {
