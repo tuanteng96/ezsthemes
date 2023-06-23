@@ -18,6 +18,19 @@ get_header();
         </div>
         <img class="d-block" src="<?php echo get_template_directory_uri() ?>/assets/img/pattern-4.png" alt="logo">
     </div>
+    
+        <?php 
+            $images = get_field('anh_noi_bat', 'term_' . 13  ); 
+            if ($images) : ?>
+            <div class="customer-top">
+                    <?php foreach ($images as $image) : ?>
+                        <div class="item">
+                            <img class="d-block" src="<?php echo $image['url'] ?>" alt="<?php echo $image['url'] ?>" />
+                        </div>
+                    <?php endforeach; ?>
+                    </div>
+            <?php endif; ?>
+    
     <div class="customer-main">
 
         <?php
@@ -40,7 +53,7 @@ get_header();
                             <div class="customer-charactor__box">
                                 <div class="customer-charactor__content">
                                     <h3><?php the_title(); ?></h3>
-                                    <div class="customer-charactor__content-desc"><?php the_excerpt(); ?></div>
+                                    <div class="customer-charactor__content-desc"><?php the_content(); ?></div>
                                 </div>
                                 <div class="customer-charactor__box-slider">
                                     <?php

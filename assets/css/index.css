@@ -19,6 +19,26 @@ body a:hover {
     text-decoration: none;
 }
 
+.customer-top {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    padding: 70px 1rem 0 1rem;
+}
+
+@media (max-width: 767px) {
+    .customer-top {
+        padding: 50px 1rem 50px 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .customer-top {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+
 #reg-advise .modal-dialog {
     max-width: 450px;
 }
