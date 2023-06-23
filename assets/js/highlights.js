@@ -12,6 +12,7 @@ const MainContent = () => {
   const [loading, setLoading] = useState(false);
   const [List, setList] = useState([]);
   const [ActiveIndex, setActiveIndex] = useState(0);
+  
   useEffect(() => {
     getListHightlights();
   }, []);
